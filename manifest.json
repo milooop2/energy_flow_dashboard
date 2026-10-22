@@ -1,0 +1,18 @@
+{
+  "domain": "energy_flow_dashboard",
+  "name": "EnergyFlowDashboard",
+  "version": "0.4.4",
+  "documentation": "https://github.com/milooop2/energy-flow-dashboard",
+  "requirements": [],
+  "codeowners": [],
+  "config_flow": true,
+  "integration_type": "service",
+  "iot_class": "local_push",
+  "dependencies": ["http", "frontend"],
+  "subentries": ["device"],
+  "frontend": {
+    "extra_module_url": [
+      "/energy_flow_dashboard/frontend/energy-flow-dashboard.js"
+    ]
+  }
+}

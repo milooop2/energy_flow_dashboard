@@ -1,0 +1,4435 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1920"
+   height="1080"
+   viewBox="0 0 1920 1080"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   sodipodi:docname="energy-flow-dashboard.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <title
+     id="title1">HA Dashboard PV</title>
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="5.6568545"
+     inkscape:cx="976.51442"
+     inkscape:cy="131.43347"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="EnergyStorage"
+     showgrid="true"
+     showguides="true">
+    <inkscape:grid
+       id="grid19"
+       units="mm"
+       originx="0"
+       originy="0"
+       spacingx="3.7795276"
+       spacingy="3.7795276"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="5"
+       enabled="true"
+       visible="true" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1">
+    <rect
+       x="1829.1368"
+       y="219.77461"
+       width="118.23317"
+       height="31.992506"
+       id="rect5" />
+    <rect
+       x="900.95044"
+       y="494.7359"
+       width="98.357033"
+       height="47.211376"
+       id="rect19" />
+    <filter
+       id="shadow-4"
+       x="-0.04344086"
+       y="-0.036330935"
+       width="1.0954839"
+       height="1.0852518">
+      <feGaussianBlur
+         in="SourceAlpha"
+         stdDeviation="8"
+         id="feGaussianBlur14" />
+      <feOffset
+         dx="4"
+         dy="7"
+         id="feOffset14" />
+      <feComponentTransfer
+         id="feComponentTransfer14">
+        <feFuncA
+           type="linear"
+           slope="0.24"
+           id="feFuncA14" />
+      </feComponentTransfer>
+      <feMerge
+         id="feMerge15">
+        <feMergeNode
+           id="feMergeNode14" />
+        <feMergeNode
+           in="SourceGraphic"
+           id="feMergeNode15" />
+      </feMerge>
+    </filter>
+    <linearGradient
+       id="side"
+       x1="33.886005"
+       y1="17.381807"
+       x2="544.36224"
+       y2="17.381807"
+       gradientTransform="scale(0.91483199,1.0930969)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         stop-color="#bfc1c3"
+         id="stop10" />
+      <stop
+         offset="45%"
+         stop-color="#e1e2e3"
+         id="stop11" />
+      <stop
+         offset="100%"
+         stop-color="#b7b9bb"
+         id="stop12" />
+    </linearGradient>
+    <linearGradient
+       id="housing"
+       x1="48.606232"
+       y1="26.628531"
+       x2="532.47168"
+       y2="26.628531"
+       gradientTransform="scale(0.91037709,1.0984459)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         stop-color="#d5d7d9"
+         id="stop1-8" />
+      <stop
+         offset="7%"
+         stop-color="#eeeeef"
+         id="stop2-8" />
+      <stop
+         offset="35%"
+         stop-color="#f8f8f8"
+         id="stop3-2" />
+      <stop
+         offset="70%"
+         stop-color="#f5f5f6"
+         id="stop4-4" />
+      <stop
+         offset="94%"
+         stop-color="#e4e5e6"
+         id="stop5-5" />
+      <stop
+         offset="100%"
+         stop-color="#c9cbcd"
+         id="stop6-5" />
+    </linearGradient>
+    <linearGradient
+       id="front"
+       x1="70.162292"
+       y1="44.799706"
+       x2="70.162292"
+       y2="490.08163"
+       gradientTransform="scale(0.90504458,1.1049179)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         stop-color="#f7f7f8"
+         id="stop7-1" />
+      <stop
+         offset="45%"
+         stop-color="#f1f1f2"
+         id="stop8-7" />
+      <stop
+         offset="100%"
+         stop-color="#e9eaeb"
+         id="stop9-1" />
+    </linearGradient>
+    <linearGradient
+       id="statusPanel"
+       x1="155.12781"
+       y1="867.67328"
+       x2="155.12781"
+       y2="934.34412"
+       gradientTransform="scale(1.9048809,0.52496719)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         stop-color="#242629"
+         id="stop13" />
+      <stop
+         offset="100%"
+         stop-color="#101113"
+         id="stop14" />
+    </linearGradient>
+    <filter
+       id="shadow-9"
+       x="-0.120067"
+       y="-0.87414634"
+       width="1.2615745"
+       height="3.0604878">
+      <feGaussianBlur
+         in="SourceAlpha"
+         stdDeviation="7"
+         id="feGaussianBlur15" />
+      <feOffset
+         dx="3"
+         dy="6"
+         id="feOffset15" />
+      <feComponentTransfer
+         id="feComponentTransfer15">
+        <feFuncA
+           type="linear"
+           slope="0.22"
+           id="feFuncA15" />
+      </feComponentTransfer>
+      <feMerge
+         id="feMerge16">
+        <feMergeNode
+           id="feMergeNode15-2" />
+        <feMergeNode
+           in="SourceGraphic"
+           id="feMergeNode16" />
+      </feMerge>
+    </filter>
+    <linearGradient
+       id="housing-7"
+       x1="36.169247"
+       y1="19.159924"
+       x2="542.5387"
+       y2="19.159924"
+       gradientTransform="scale(0.91237735,1.0960377)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         stop-color="#dedfe0"
+         id="stop1-9" />
+      <stop
+         offset="7%"
+         stop-color="#f5f5f5"
+         id="stop2-5" />
+      <stop
+         offset="50%"
+         stop-color="#ffffff"
+         id="stop3-4" />
+      <stop
+         offset="92%"
+         stop-color="#f3f3f3"
+         id="stop4-3" />
+      <stop
+         offset="100%"
+         stop-color="#d7d8d9"
+         id="stop5-1" />
+    </linearGradient>
+    <linearGradient
+       id="frontWhite"
+       x1="61.822327"
+       y1="38.04451"
+       x2="61.822327"
+       y2="497.29608"
+       gradientTransform="scale(0.90582163,1.1039701)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         stop-color="#ffffff"
+         id="stop6-2" />
+      <stop
+         offset="100%"
+         stop-color="#f0f0f0"
+         id="stop7-3" />
+    </linearGradient>
+    <radialGradient
+       id="switchFace"
+       cx="83.875"
+       cy="197.5"
+       fx="83.875"
+       fy="197.5"
+       r="23.75"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         stop-color="#55565a"
+         id="stop13-3" />
+      <stop
+         offset="55%"
+         stop-color="#292a2d"
+         id="stop14-4" />
+      <stop
+         offset="100%"
+         stop-color="#111214"
+         id="stop15" />
+    </radialGradient>
+    <radialGradient
+       id="fanDark"
+       cx="264.5"
+       cy="207"
+       fx="264.5"
+       fy="207"
+       r="60"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         stop-color="#3c3d40"
+         id="stop10-1" />
+      <stop
+         offset="70%"
+         stop-color="#202124"
+         id="stop11-1" />
+      <stop
+         offset="100%"
+         stop-color="#111214"
+         id="stop12-3" />
+    </radialGradient>
+    <linearGradient
+       id="darkPanel"
+       x1="39.072224"
+       y1="510.59293"
+       x2="39.072224"
+       y2="795.0661"
+       gradientTransform="scale(1.4588369,0.68547758)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         stop-color="#303136"
+         id="stop8-8" />
+      <stop
+         offset="100%"
+         stop-color="#1e2025"
+         id="stop9-7" />
+    </linearGradient>
+    <filter
+       id="shadow-9-3"
+       x="-0.120067"
+       y="-1.0840076"
+       width="1.2615745"
+       height="3.5551607">
+      <feGaussianBlur
+         in="SourceAlpha"
+         stdDeviation="7"
+         id="feGaussianBlur15-7" />
+      <feOffset
+         dx="3"
+         dy="6"
+         id="feOffset15-8" />
+      <feComponentTransfer
+         id="feComponentTransfer15-8">
+        <feFuncA
+           type="linear"
+           slope="0.22"
+           id="feFuncA15-2" />
+      </feComponentTransfer>
+      <feMerge
+         id="feMerge16-9">
+        <feMergeNode
+           id="feMergeNode15-2-1" />
+        <feMergeNode
+           in="SourceGraphic"
+           id="feMergeNode16-3" />
+      </feMerge>
+    </filter>
+    <filter
+       id="filter2"
+       x="-0.075041875"
+       y="-0.70698929"
+       width="1.1634841"
+       height="2.6664748">
+      <feGaussianBlur
+         in="SourceAlpha"
+         stdDeviation="7"
+         id="feGaussianBlur1-5" />
+      <feOffset
+         dx="3"
+         dy="6"
+         id="feOffset1" />
+      <feComponentTransfer
+         id="feComponentTransfer1">
+        <feFuncA
+           type="linear"
+           slope="0.22"
+           id="feFuncA1" />
+      </feComponentTransfer>
+      <feMerge
+         id="feMerge2-9">
+        <feMergeNode
+           id="feMergeNode1-8" />
+        <feMergeNode
+           in="SourceGraphic"
+           id="feMergeNode2-4" />
+      </feMerge>
+    </filter>
+    <filter
+       id="filter4"
+       x="-0.075041875"
+       y="-0.70698929"
+       width="1.1634841"
+       height="2.6664748">
+      <feGaussianBlur
+         in="SourceAlpha"
+         stdDeviation="7"
+         id="feGaussianBlur2-0" />
+      <feOffset
+         dx="3"
+         dy="6"
+         id="feOffset2" />
+      <feComponentTransfer
+         id="feComponentTransfer2">
+        <feFuncA
+           type="linear"
+           slope="0.22"
+           id="feFuncA2" />
+      </feComponentTransfer>
+      <feMerge
+         id="feMerge4-7">
+        <feMergeNode
+           id="feMergeNode3-6" />
+        <feMergeNode
+           in="SourceGraphic"
+           id="feMergeNode4-3" />
+      </feMerge>
+    </filter>
+    <filter
+       id="filter6"
+       x="-0.075041875"
+       y="-0.70698929"
+       width="1.1634841"
+       height="2.6664748">
+      <feGaussianBlur
+         in="SourceAlpha"
+         stdDeviation="7"
+         id="feGaussianBlur4" />
+      <feOffset
+         dx="3"
+         dy="6"
+         id="feOffset4" />
+      <feComponentTransfer
+         id="feComponentTransfer4">
+        <feFuncA
+           type="linear"
+           slope="0.22"
+           id="feFuncA4" />
+      </feComponentTransfer>
+      <feMerge
+         id="feMerge6">
+        <feMergeNode
+           id="feMergeNode5" />
+        <feMergeNode
+           in="SourceGraphic"
+           id="feMergeNode6" />
+      </feMerge>
+    </filter>
+    <filter
+       id="filter8"
+       x="-0.075041875"
+       y="-0.70698929"
+       width="1.1634841"
+       height="2.6664748">
+      <feGaussianBlur
+         in="SourceAlpha"
+         stdDeviation="7"
+         id="feGaussianBlur6" />
+      <feOffset
+         dx="3"
+         dy="6"
+         id="feOffset6" />
+      <feComponentTransfer
+         id="feComponentTransfer6">
+        <feFuncA
+           type="linear"
+           slope="0.22"
+           id="feFuncA6" />
+      </feComponentTransfer>
+      <feMerge
+         id="feMerge8">
+        <feMergeNode
+           id="feMergeNode7" />
+        <feMergeNode
+           in="SourceGraphic"
+           id="feMergeNode8" />
+      </feMerge>
+    </filter>
+  </defs>
+  <g
+     id="AC wires"
+     style="display:inline"
+     sodipodi:insensitive="true">
+    <g
+       id="wire_Heat_pump"
+       style="display:inline">
+      <path
+         id="wire_Heat_pumpA"
+         d="m 1231.1505,486.84282 h 288.0252"
+         fill="none"
+         stroke="#ffb300"
+         stroke-width="8"
+         stroke-linecap="round" />
+      <path
+         id="wire_Heat_pumpC"
+         d="m 1106.389,882.37207 h 126.9978"
+         fill="none"
+         stroke="#ffb300"
+         stroke-width="8"
+         stroke-linecap="round"
+         style="display:inline" />
+      <path
+         id="wire_Heat_pumpB"
+         d="M 1231.1505,488.65975 V 882.37207"
+         fill="none"
+         stroke="#ffb300"
+         stroke-width="8"
+         stroke-linecap="round"
+         style="display:inline" />
+    </g>
+    <g
+       id="WIre-subboard_1-2">
+      <path
+         id="inv1_ac_output-9-8"
+         d="m 1020.4725,783.13536 v 43.93669"
+         fill="none"
+         stroke="#ffb300"
+         stroke-width="8"
+         stroke-linecap="round" />
+    </g>
+    <g
+       id="grid_wires">
+      <path
+         id="grid_wiresA"
+         d="M 1095.0422,925.98428 H 1248.265"
+         fill="none"
+         stroke="#ffb300"
+         stroke-width="8"
+         stroke-linecap="round"
+         style="display:inline" />
+    </g>
+    <g
+       id="home_wires">
+      <path
+         id="home_wiresC"
+         d="m 1221.1036,258.56694 h 246.8165"
+         fill="none"
+         stroke="#ffb300"
+         stroke-width="8"
+         stroke-linecap="round"
+         style="display:inline" />
+      <path
+         id="home_wiresB"
+         d="m 1103.3903,850.39372 h 115.8229"
+         fill="none"
+         stroke="#ffb300"
+         stroke-width="8"
+         stroke-linecap="round" />
+      <path
+         id="home_wiresA"
+         d="M 1218.9684,258.56694 V 850.29059"
+         fill="none"
+         stroke="#ffb300"
+         stroke-width="8"
+         stroke-linecap="round" />
+    </g>
+    <g
+       id="wire_inverter2">
+      <path
+         id="inv2_ac_output"
+         d="m 699.73889,450.85856 h 82.335"
+         fill="none"
+         stroke="#ffb300"
+         stroke-width="8"
+         stroke-linecap="round" />
+      <text
+         id="inv2_ac_label"
+         x="741.43292"
+         y="439.36002"
+         font-family="sans-serif"
+         font-size="20px"
+         fill="#546e7a">AC</text>
+    </g>
+    <g
+       id="wire_inverter1">
+      <path
+         id="inv1_ac_output"
+         d="m 701.30676,312.93311 h 167.9846"
+         fill="none"
+         stroke="#ffb300"
+         stroke-width="8"
+         stroke-linecap="round" />
+      <path
+         id="inv1_ac_output-3"
+         d="M 868.61754,314.37462 V 429.40334"
+         fill="none"
+         stroke="#ffb300"
+         stroke-width="8"
+         stroke-linecap="round" />
+      <text
+         id="inv1_ac_label"
+         x="831.49609"
+         y="336.37796"
+         font-family="sans-serif"
+         font-size="20px"
+         fill="#546e7a"
+         style="display:inline">AC</text>
+    </g>
+  </g>
+  <g
+     id="DC Wires"
+     style="display:inline"
+     sodipodi:insensitive="true">
+    <path
+       id="inv1_DC_Storage"
+       d="m 708.03251,283.46457 h 171.3366"
+       fill="none"
+       stroke="#ff0000"
+       stroke-width="16"
+       stroke-linecap="round"
+       inkscape:label="inv1_DC_Storage"
+       style="display:inline" />
+    <text
+       id="inv1_dc_label"
+       x="772.45941"
+       y="272.49417"
+       font-family="sans-serif"
+       font-size="24px"
+       fill="#546e7a"
+       style="display:inline">DC</text>
+  </g>
+  <g
+     id="AC_SubBoard1"
+     inkscape:label="AC_SubBoard1"
+     style="display:inline"
+     sodipodi:insensitive="true">
+    <rect
+       id="AC_board1"
+       x="774.80316"
+       y="421.84888"
+       width="423.39737"
+       height="365.7511"
+       rx="28.226494"
+       fill="#dbfab2"
+       stroke="#000000"
+       stroke-width="6.29096" />
+    <g
+       id="AC_SubBoard1_data"
+       transform="translate(-894.74363,-117.1909)">
+      <text
+         id="AC_subboard1_Power_Total_data"
+         font-family="sans-serif"
+         font-size="20px"
+         fill="#546e7a"
+         stroke-width="1"
+         text-anchor="left"
+         x="2008.7432"
+         y="780.63904">---- W</text>
+      <text
+         id="AC_subboard1_Power_Total_label"
+         font-family="sans-serif"
+         font-size="20px"
+         fill="#546e7a"
+         stroke-width="1"
+         text-anchor="left"
+         x="1697.8923"
+         y="780.21521">Power Total:</text>
+      <text
+         id="AC_subboard1_Energy_Produced-data"
+         font-family="sans-serif"
+         font-size="20px"
+         fill="#546e7a"
+         stroke-width="1"
+         text-anchor="left"
+         x="1703.4529"
+         y="862.87097">---- kWh</text>
+      <text
+         id="AC_subboard1_Energy_label"
+         font-family="sans-serif"
+         font-size="20px"
+         fill="#546e7a"
+         stroke-width="1"
+         text-anchor="left"
+         x="1700"
+         y="821.27802">Today Production:</text>
+      <text
+         id="AC_subboard1_Curr_L3"
+         font-family="sans-serif"
+         font-size="20px"
+         fill="#546e7a"
+         inkscape:label="AC_subboard1_Curr_L3"
+         stroke-width="1"
+         text-anchor="left"
+         x="1915.4431"
+         y="718.72198">Prąd L3: --</text>
+      <text
+         id="AC_subboard1_Curr_L2"
+         font-family="sans-serif"
+         font-size="20px"
+         fill="#546e7a"
+         inkscape:label="AC_subboard1_Curr_L2"
+         stroke-width="1"
+         text-anchor="left"
+         x="1915.4431"
+         y="688.72198">Prąd L2: --</text>
+      <text
+         id="AC_subboard1_Curr_L1"
+         font-family="sans-serif"
+         font-size="20px"
+         fill="#546e7a"
+         inkscape:label="AC_subboard1_Curr_L1"
+         stroke-width="1"
+         text-anchor="left"
+         x="1915.4431"
+         y="658.72198">Prąd L1: --</text>
+      <text
+         id="AC_subboard1_Current-label"
+         font-family="sans-serif"
+         font-size="20px"
+         fill="#546e7a"
+         stroke-width="1"
+         text-anchor="left"
+         x="1918.9093"
+         y="619.03693">Current_label</text>
+      <text
+         id="AC_subboard1_VAC_L3"
+         font-family="sans-serif"
+         font-size="20px"
+         fill="#546e7a"
+         inkscape:label="AC_subboard1_VAC_L3"
+         stroke-width="1"
+         text-anchor="left"
+         x="1715.4431"
+         y="718.72198">V L3: --</text>
+      <text
+         id="AC_subboard1_VAC_L2"
+         font-family="sans-serif"
+         font-size="20px"
+         fill="#546e7a"
+         inkscape:label="AC_subboard1_VAC_L2"
+         stroke-width="1"
+         text-anchor="left"
+         x="1715.4431"
+         y="688.72198">V L2: --</text>
+      <text
+         id="AC_subboard1_VAC_L1"
+         font-family="sans-serif"
+         font-size="20px"
+         fill="#546e7a"
+         inkscape:label="AC_subboard1_VAC_L1"
+         stroke-width="1"
+         text-anchor="left"
+         x="1715.4431"
+         y="658.72198">V L1: --</text>
+      <text
+         id="AC_subboard1_Voltage_label"
+         font-family="sans-serif"
+         font-size="20px"
+         fill="#546e7a"
+         stroke-width="1"
+         text-anchor="left"
+         x="1715.4431"
+         y="617.65918">Voltage_label</text>
+      <text
+         id="AC_SubBoard1_label"
+         x="1486.9766"
+         y="662.56866"
+         font-family="sans-serif"
+         font-size="20px"
+         fill="#546e7a"
+         transform="scale(1.1609058,0.86139633)"
+         style="stroke-width:3.91532"
+         text-anchor="left">AC_SubBoard1_label</text>
+    </g>
+  </g>
+  <g
+     id="AC_Subboard2"
+     inkscape:label="AC_Subboard2"
+     transform="translate(-1237.4616,21.735598)"
+     style="display:inline"
+     sodipodi:insensitive="true">
+    <rect
+       id="rect13"
+       x="2019.7888"
+       y="810.21448"
+       width="325.10922"
+       height="205.20549"
+       rx="21.67395"
+       fill="#dbfab2"
+       stroke="#000000"
+       stroke-width="4.12914"
+       inkscape:label="AC_Subboard2" />
+    <g
+       id="g4-8"
+       inkscape:label="AC_Subboard2_data"
+       transform="matrix(0.76378384,0,0,0.9300246,745.23626,313.94612)">
+      <text
+         id="AC_SubBoard2_label"
+         x="1448.2671"
+         y="665.77698"
+         font-family="sans-serif"
+         font-size="20px"
+         fill="#546e7a"
+         transform="scale(1.1609058,0.86139633)"
+         style="stroke-width:3.91532">AC_SubBoard2_label</text>
+      <text
+         id="AC_SubBoard2_power_supply-label"
+         x="1450.269"
+         y="713.25781"
+         font-family="sans-serif"
+         font-size="20px"
+         fill="#546e7a"
+         transform="scale(1.1609058,0.86139633)"
+         style="stroke-width:3.91532">Rodzaj zasilania:</text>
+      <text
+         id="AC_SubBoard2_battery_SOC-data"
+         x="1660.7588"
+         y="760.15265"
+         font-family="sans-serif"
+         font-size="20px"
+         fill="#546e7a"
+         transform="scale(1.1609058,0.86139633)"
+         style="display:inline;stroke-width:3.91532">-- %</text>
+      <text
+         id="AC_SubBoard2_battery_SOC-label"
+         x="1448.3159"
+         y="760.13312"
+         font-family="sans-serif"
+         font-size="20px"
+         fill="#546e7a"
+         transform="scale(1.1609058,0.86139633)"
+         style="stroke-width:3.91532">Bateria SOC:</text>
+      <g
+         id="PowerSupplyState"
+         inkscape:label="PowerSupplyState"
+         transform="translate(-30.674724,10.485437)">
+        <text
+           id="AC_SubBoard2_power_supply-grid"
+           x="1934.3936"
+           y="603.62903"
+           font-family="sans-serif"
+           font-size="20px"
+           fill="#546e7a">GRID</text>
+        <text
+           id="AC_SubBoard2_power_supply-backup"
+           x="2011.2061"
+           y="603.91223"
+           font-family="sans-serif"
+           font-size="20px"
+           fill="#546e7a">Backup</text>
+      </g>
+    </g>
+  </g>
+  <defs
+     id="defs4">
+    <!-- ================================================= -->
+    <!-- GLOW DLA STYKÓW                                   -->
+    <!-- ================================================= -->
+    <filter
+       id="contactGlow"
+       x="-0.16461538"
+       width="1.3292308"
+       y="-inf"
+       height="inf">
+      <feGaussianBlur
+         in="SourceGraphic"
+         stdDeviation="3"
+         result="blur"
+         id="feGaussianBlur1" />
+      <feMerge
+         id="feMerge2">
+        <feMergeNode
+           in="blur"
+           id="feMergeNode1" />
+        <feMergeNode
+           in="SourceGraphic"
+           id="feMergeNode2" />
+      </feMerge>
+    </filter>
+    <!-- ================================================= -->
+    <!-- GLOW DLA AKTYWNEGO TORU                          -->
+    <!-- ================================================= -->
+    <filter
+       id="activeGlow"
+       x="-0.30000001"
+       y="-0.30000001"
+       width="1.6"
+       height="1.6">
+      <feGaussianBlur
+         in="SourceGraphic"
+         stdDeviation="2"
+         result="blur"
+         id="feGaussianBlur2" />
+      <feMerge
+         id="feMerge4">
+        <feMergeNode
+           in="blur"
+           id="feMergeNode3" />
+        <feMergeNode
+           in="SourceGraphic"
+           id="feMergeNode4" />
+      </feMerge>
+    </filter>
+  </defs>
+  <!-- ================================================= -->
+  <!-- CAŁY PRZEŁĄCZNIK FULL BACKUP                       -->
+  <!-- ================================================= -->
+  <g
+     id="full-backup"
+     style="display:inline"
+     sodipodi:insensitive="true">
+    <!-- ================================================= -->
+    <!-- NAGŁÓWEK                                          -->
+    <!-- ================================================= -->
+    <rect
+       id="rect13-2"
+       x="1247.2739"
+       y="774.80316"
+       width="526.56744"
+       height="264.56699"
+       rx="35.104496"
+       fill="#dbfab2"
+       stroke="#000000"
+       stroke-width="5.9668"
+       inkscape:label="frame_mainboard" />
+    <text
+       id="backup-title"
+       x="1510.311"
+       y="793.70081"
+       text-anchor="middle"
+       font-family="Arial, Helvetica, sans-serif"
+       font-size="20px"
+       font-weight="600"
+       letter-spacing="3"
+       fill="#263238">Stan na zasilaniu OSD</text>
+    <!-- ================================================= -->
+    <!-- OPIS LEWEJ STRONY                                 -->
+    <!-- ================================================= -->
+    <!-- ================================================= -->
+    <!-- OPIS PRAWEJ STRONY                                -->
+    <!-- ================================================= -->
+    <!-- ================================================= -->
+    <!-- STAN AKTYWNEGO ŹRÓDŁA                             -->
+    <!-- ================================================= -->
+    <g
+       id="power-lines"
+       transform="matrix(0.7806136,0,0,0.7817851,1131.9658,700.4084)">
+      <g
+         id="phase-L1">
+        <!-- oznaczenie -->
+        <text
+           x="189.30548"
+           y="162.5544"
+           font-family="Arial, Helvetica, sans-serif"
+           font-size="20px"
+           font-weight="600"
+           fill="#263238"
+           id="GRID_Phase_label_L1">L1</text>
+        <!-- napięcie -->
+        <text
+           x="286.80371"
+           y="166.75906"
+           text-anchor="middle"
+           font-family="Arial, Helvetica, sans-serif"
+           font-size="20px"
+           fill="#263238"
+           id="grid-voltage-l1-label">NAPIĘCIE</text>
+        <text
+           id="grid-voltage-l1-data"
+           x="363.1113"
+           y="170.57858"
+           text-anchor="middle"
+           font-family="Arial, Helvetica, sans-serif"
+           font-size="20px"
+           fill="#263238">230 V</text>
+        <!-- przewód lewy -->
+        <line
+           id="wire-grid-L1"
+           x1="141.39"
+           y1="180"
+           x2="440"
+           y2="180"
+           stroke="#666c70"
+           stroke-width="4.71404" />
+        <!-- nieruchomy styk lewy -->
+        <circle
+           cx="440"
+           cy="180"
+           r="8"
+           fill="#202326"
+           stroke="#8a9094"
+           stroke-width="2"
+           id="circle5" />
+        <!-- RUCHOMY STYK -->
+        <g
+           id="moving-contact-L1">
+          <line
+             x1="440"
+             y1="180"
+             x2="505"
+             y2="180"
+             stroke="#c4c8ca"
+             stroke-width="7"
+             stroke-linecap="round"
+             id="line5" />
+          <circle
+             cx="505"
+             cy="180"
+             r="8"
+             fill="#202326"
+             stroke="#aeb4b8"
+             stroke-width="2"
+             id="circle6" />
+        </g>
+        <!-- przewód prawy -->
+        <line
+           id="wire-load-L1"
+           x1="505"
+           y1="180"
+           x2="822.27057"
+           y2="180"
+           stroke="#666c70"
+           stroke-width="4.33603" />
+        <!-- prąd -->
+        <text
+           x="562.26782"
+           y="166.75906"
+           text-anchor="middle"
+           font-family="Arial, Helvetica, sans-serif"
+           font-size="20px"
+           fill="#263238"
+           id="grid-current-l1-label">PRĄD</text>
+        <text
+           id="grid-current-l1-data"
+           x="623.45142"
+           y="168.33765"
+           text-anchor="middle"
+           font-family="Arial, Helvetica, sans-serif"
+           font-size="20px"
+           fill="#263238">12.4 A</text>
+      </g>
+      <g
+         id="phase-L2"
+         transform="translate(2.6887501,-39.447121)">
+        <text
+           x="187.93057"
+           y="256.28928"
+           font-family="Arial, Helvetica, sans-serif"
+           font-size="20px"
+           font-weight="600"
+           fill="#263238"
+           id="GRID_Phase_label_L2">L2</text>
+        <text
+           x="286.80371"
+           y="258.25302"
+           text-anchor="middle"
+           font-family="Arial, Helvetica, sans-serif"
+           font-size="20px"
+           fill="#263238"
+           id="grid-voltage-l2-label">NAPIĘCIE</text>
+        <text
+           id="grid-voltage-l2-data"
+           x="364.48624"
+           y="261.32556"
+           text-anchor="middle"
+           font-family="Arial, Helvetica, sans-serif"
+           font-size="20px"
+           fill="#263238">231 V</text>
+        <line
+           id="wire-grid-L2"
+           x1="143.33441"
+           y1="270"
+           x2="440"
+           y2="270"
+           stroke="#666c70"
+           stroke-width="4.69866" />
+        <circle
+           cx="440"
+           cy="270"
+           r="8"
+           fill="#202326"
+           stroke="#8a9094"
+           stroke-width="2"
+           id="circle8" />
+        <g
+           id="moving-contact-L2">
+          <line
+             x1="440"
+             y1="270"
+             x2="505"
+             y2="270"
+             stroke="#c4c8ca"
+             stroke-width="7"
+             stroke-linecap="round"
+             id="line8" />
+          <circle
+             cx="505"
+             cy="270"
+             r="8"
+             fill="#202326"
+             stroke="#aeb4b8"
+             stroke-width="2"
+             id="circle9" />
+        </g>
+        <line
+           id="wire-load-L2"
+           x1="505"
+           y1="268.72089"
+           x2="822.83136"
+           y2="268.72089"
+           stroke="#666c70"
+           stroke-width="4.33987" />
+        <text
+           x="562.26782"
+           y="260.49396"
+           text-anchor="middle"
+           font-family="Arial, Helvetica, sans-serif"
+           font-size="20px"
+           fill="#263238"
+           id="grid-current-l2-label">PRĄD</text>
+        <text
+           id="grid-current-l2-data"
+           x="624.13885"
+           y="260.57858"
+           text-anchor="middle"
+           font-family="Arial, Helvetica, sans-serif"
+           font-size="20px"
+           fill="#263238">11.8 A</text>
+      </g>
+      <g
+         id="phase-L3"
+         transform="translate(2.6887501,-80.982654)">
+        <text
+           x="186.55565"
+           y="342.55441"
+           font-family="Arial, Helvetica, sans-serif"
+           font-size="20px"
+           font-weight="600"
+           fill="#263238"
+           id="GRID_Phase_label_L3"
+           style="fill:#263238;fill-opacity:1">L3</text>
+        <text
+           x="286.80371"
+           y="340.03625"
+           text-anchor="middle"
+           font-family="Arial, Helvetica, sans-serif"
+           font-size="20px"
+           fill="#263238"
+           id="grid-voltage-l3-label">NAPIĘCIE</text>
+        <text
+           id="grid-voltage-l3-data"
+           x="367.23605"
+           y="345.34973"
+           text-anchor="middle"
+           font-family="Arial, Helvetica, sans-serif"
+           font-size="20px"
+           fill="#263238">229 V</text>
+        <line
+           id="wire-grid-L3"
+           x1="141.39"
+           y1="360"
+           x2="440"
+           y2="360"
+           stroke="#666c70"
+           stroke-width="4.71404" />
+        <circle
+           cx="440"
+           cy="360"
+           r="8"
+           fill="#202326"
+           stroke="#8a9094"
+           stroke-width="2"
+           id="circle11" />
+        <g
+           id="moving-contact-L3">
+          <line
+             x1="440"
+             y1="360"
+             x2="505"
+             y2="360"
+             stroke="#c4c8ca"
+             stroke-width="7"
+             stroke-linecap="round"
+             id="line11" />
+          <circle
+             cx="505"
+             cy="360"
+             r="8"
+             fill="#202326"
+             stroke="#aeb4b8"
+             stroke-width="2"
+             id="circle12" />
+        </g>
+        <line
+           id="wire-load-L3"
+           x1="505"
+           y1="360"
+           x2="822.83136"
+           y2="360"
+           stroke="#666c70"
+           stroke-width="4.33986" />
+        <text
+           x="562.92035"
+           y="347.41544"
+           text-anchor="middle"
+           font-family="Arial, Helvetica, sans-serif"
+           font-size="20px"
+           fill="#263238"
+           id="grid-current-l3-label">PRĄD</text>
+        <text
+           id="grid-current-l3-data"
+           x="623.48206"
+           y="346.41257"
+           text-anchor="middle"
+           font-family="Arial, Helvetica, sans-serif"
+           font-size="20px"
+           fill="#263238">10.9 A</text>
+      </g>
+      <g
+         id="phase-N"
+         transform="translate(2.6887501,-122.51819)">
+        <text
+           x="197.55495"
+           y="437.78323"
+           font-family="Arial, Helvetica, sans-serif"
+           font-size="20px"
+           font-weight="600"
+           fill="#263238"
+           id="GRID_Phase_label_N">N</text>
+        <line
+           id="wire-grid-N"
+           x1="143.33441"
+           y1="450"
+           x2="440"
+           y2="450"
+           stroke="#666c70"
+           stroke-width="4.69866" />
+        <circle
+           cx="440"
+           cy="450"
+           r="8"
+           fill="#202326"
+           stroke="#8a9094"
+           stroke-width="2"
+           id="circle15" />
+        <g
+           id="moving-contact-N">
+          <line
+             x1="440"
+             y1="450"
+             x2="505"
+             y2="450"
+             stroke="#c4c8ca"
+             stroke-width="7"
+             stroke-linecap="round"
+             id="line15" />
+          <circle
+             cx="505"
+             cy="450"
+             r="8"
+             fill="#202326"
+             stroke="#aeb4b8"
+             stroke-width="2"
+             id="circle16" />
+        </g>
+        <line
+           id="wire-load-N"
+           x1="505"
+           y1="450"
+           x2="819.58179"
+           y2="450"
+           stroke="#666c70"
+           stroke-width="4.31763" />
+      </g>
+    </g>
+    <!-- ================================================= -->
+    <!-- OZNACZENIE STYKU                                 -->
+    <!-- ================================================= -->
+    <!-- ================================================= -->
+    <!-- MOC LICZNIKA                                      -->
+    <!-- ================================================= -->
+    <g
+       id="meter-power">
+      <line
+         x1="1331.811"
+         y1="982.67719"
+         x2="1691.811"
+         y2="982.67719"
+         stroke="#44494d"
+         stroke-width="1.5"
+         id="line16" />
+      <text
+         x="1359.63"
+         y="1001.5748"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="20px"
+         letter-spacing="2"
+         fill="#263238"
+         id="meter-power-label">meter-power-label</text>
+      <text
+         x="1694.3516"
+         y="1000.7731"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="20px"
+         letter-spacing="2"
+         fill="#263238"
+         id="meter-power-produced_day-label">meter-power-produced_day-label</text>
+      <text
+         id="meter-power-data"
+         x="1356.8505"
+         y="1024.252"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="20px"
+         font-weight="600"
+         fill="#263238">8.07 kW</text>
+      <text
+         id="meter-power-produced_day-data"
+         x="1621.4174"
+         y="1024.252"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="20px"
+         font-weight="600"
+         fill="#263238">8.07 kWh</text>
+    </g>
+  </g>
+  <g
+     id="inverter_1"
+     style="display:inline"
+     sodipodi:insensitive="true">
+    <!-- ========================================================= -->
+    <!-- INVERTER 1 - DATA / CONFIG                                -->
+    <!-- ========================================================= -->
+    <!--
+    STRING VISIBILITY:
+      display="inline"  -> STRING ON
+      display="none"    -> STRING OFF
+
+    Later JS can control:
+      inv1_mppt1
+      inv1_mppt2
+      inv1_mppt3
+  -->
+    <!-- ========================================================= -->
+    <!-- MPPT 1 / STRING 1                                         -->
+    <!-- ========================================================= -->
+    <g
+       id="inv1_mppt1"
+       display="inline"
+       transform="matrix(0.69705631,0,0,0.59688874,-59.021427,-73.631632)"
+       sodipodi:insensitive="true">
+      <!-- STRING 1 PV PANELS -->
+      <g
+         id="inv1_mppt1_panels"
+         sodipodi:insensitive="true">
+        <!-- Panel 1 -->
+        <!-- Panel 1 → Panel 2 -->
+        <path
+           id="inv1_mppt1_Back_DCc"
+           d="m 145.51021,311.89828 c 11.41564,0 692.4032,1.59468 702.4182,1.59468"
+           fill="none"
+           stroke="#42a5f5"
+           stroke-width="8"
+           stroke-linecap="round"
+           sodipodi:nodetypes="cc"
+           inkscape:label="inv1_mppt1_Back_DCc" />
+        <path
+           id="inv1_mppt1_Back_DCb"
+           d="m 145.70482,221.67646 v 90.22192"
+           fill="none"
+           stroke="#42a5f5"
+           stroke-width="8"
+           stroke-linecap="round"
+           inkscape:label="inv1_mppt1_Back_DCb" />
+        <path
+           id="inv1_mppt1_Back_DCa"
+           d="m 145.54659,216.03286 h 30"
+           fill="none"
+           stroke="#42a5f5"
+           stroke-width="8"
+           stroke-linecap="round"
+           inkscape:label="inv1_mppt1_Back_DCa" />
+        <g
+           id="inv1_mppt1_panel1"
+           transform="translate(-152.91247,5.9583836)"
+           style="display:inline">
+          <rect
+             x="330"
+             y="180"
+             width="120"
+             height="70"
+             rx="4"
+             fill="#263238"
+             stroke="#90a4ae"
+             stroke-width="4"
+             id="rect1" />
+          <line
+             x1="370"
+             y1="180"
+             x2="370"
+             y2="250"
+             stroke="#90a4ae"
+             stroke-width="2"
+             id="line1" />
+          <line
+             x1="410"
+             y1="180"
+             x2="410"
+             y2="250"
+             stroke="#90a4ae"
+             stroke-width="2"
+             id="line2"
+             style="display:inline" />
+        </g>
+        <path
+           id="inv1_mppt1_panel1_to_panel2"
+           d="m 300,215 h 30"
+           fill="none"
+           stroke="#42a5f5"
+           stroke-width="8"
+           stroke-linecap="round"
+           style="display:inline" />
+        <!-- Panel 2 -->
+        <g
+           id="inv1_mppt1_panel2"
+           style="display:inline">
+          <rect
+             x="330"
+             y="180"
+             width="120"
+             height="70"
+             rx="4"
+             fill="#263238"
+             stroke="#90a4ae"
+             stroke-width="4"
+             id="rect2" />
+          <line
+             x1="370"
+             y1="180"
+             x2="370"
+             y2="250"
+             stroke="#90a4ae"
+             stroke-width="2"
+             id="line3" />
+          <line
+             x1="410"
+             y1="180"
+             x2="410"
+             y2="250"
+             stroke="#90a4ae"
+             stroke-width="2"
+             id="line4" />
+        </g>
+        <!-- Panel 2 → Panel 3 -->
+        <path
+           id="inv1_mppt1_panel2_to_panel3"
+           d="m 450,215 h 30"
+           fill="none"
+           stroke="#42a5f5"
+           stroke-width="8"
+           stroke-linecap="round"
+           style="display:inline" />
+        <!-- Panel 3 -->
+        <g
+           id="inv1_mppt1_panel3"
+           style="display:inline">
+          <rect
+             x="480"
+             y="180"
+             width="120"
+             height="70"
+             rx="4"
+             fill="#263238"
+             stroke="#90a4ae"
+             stroke-width="4"
+             id="rect4" />
+          <line
+             x1="520"
+             y1="180"
+             x2="520"
+             y2="250"
+             stroke="#90a4ae"
+             stroke-width="2"
+             id="line17" />
+          <line
+             x1="560"
+             y1="180"
+             x2="560"
+             y2="250"
+             stroke="#90a4ae"
+             stroke-width="2"
+             id="line6" />
+        </g>
+        <!-- Panel 3 → Inverter -->
+        <path
+           id="inv1_mppt1_dc"
+           d="M 600,215 H 850"
+           fill="none"
+           stroke="#42a5f5"
+           stroke-width="8"
+           stroke-linecap="round"
+           style="display:inline" />
+      </g>
+      <!-- STRING 1 LABEL -->
+      <text
+         id="inv1_mppt1_name"
+         x="616.54456"
+         y="207.16772"
+         text-anchor="left"
+         font-family="sans-serif"
+         font-size="20px"
+         fill="#263238"
+         inkscape:label="inv1_mppt1_name">MPPT 1</text>
+      <!-- STRING 1 DATA -->
+      <g
+         id="g12"
+         inkscape:label="inv1_mppt1_data"
+         style="display:inline"
+         transform="translate(-0.30468502,18.597655)">
+        <text
+           id="inv1_mppt1_vdc"
+           x="180.95837"
+           y="283.01633"
+           font-family="sans-serif"
+           font-size="20px"
+           fill="#546e7a"
+           text-anchor="left">Vdc: --</text>
+        <text
+           id="inv1_mppt1_adc"
+           x="412.91254"
+           y="282.65305"
+           font-family="sans-serif"
+           font-size="20px"
+           fill="#546e7a"
+           text-anchor="left">Adc: --</text>
+        <text
+           id="inv1_mppt1_pdc"
+           x="617.63049"
+           y="282.65305"
+           font-family="sans-serif"
+           font-size="20px"
+           fill="#546e7a"
+           xml:space="default"
+           text-anchor="left"><tspan
+             x="617.63049"
+             y="282.65305"
+             id="tspan1">Pdc: --</tspan></text>
+      </g>
+    </g>
+    <g
+       id="inv1_mppt2"
+       display="inline"
+       style="display:inline"
+       transform="matrix(0.69705631,0,0,0.59688874,-59.021427,20.85656)"
+       sodipodi:insensitive="true">
+      <!-- STRING 1 PV PANELS -->
+      <g
+         id="inv1_mppt2_panels-3"
+         sodipodi:insensitive="true">
+        <!-- Panel 1 -->
+        <!-- Panel 1 → Panel 2 -->
+        <path
+           id="inv1_mppt2_Back_DCc"
+           d="m 145.51021,311.89828 c 11.41564,0 692.4032,1.59468 702.4182,1.59468"
+           fill="none"
+           stroke="#42a5f5"
+           stroke-width="8"
+           stroke-linecap="round"
+           sodipodi:nodetypes="cc" />
+        <path
+           id="inv1_mppt2_Back_DCb"
+           d="m 145.70482,221.67646 v 90.22192"
+           fill="none"
+           stroke="#42a5f5"
+           stroke-width="8"
+           stroke-linecap="round" />
+        <path
+           id="inv1_mppt2_Back_DCa"
+           d="m 145.54659,216.03286 h 30"
+           fill="none"
+           stroke="#42a5f5"
+           stroke-width="8"
+           stroke-linecap="round" />
+        <g
+           id="inv1_mppt2_panel1"
+           transform="translate(-152.91247,5.9583836)"
+           style="display:inline">
+          <rect
+             x="330"
+             y="180"
+             width="120"
+             height="70"
+             rx="4"
+             fill="#263238"
+             stroke="#90a4ae"
+             stroke-width="4"
+             id="rect1-0" />
+          <line
+             x1="370"
+             y1="180"
+             x2="370"
+             y2="250"
+             stroke="#90a4ae"
+             stroke-width="2"
+             id="line1-9" />
+          <line
+             x1="410"
+             y1="180"
+             x2="410"
+             y2="250"
+             stroke="#90a4ae"
+             stroke-width="2"
+             id="line2-7"
+             style="display:inline" />
+        </g>
+        <path
+           id="inv1_mppt2_panel1_to_panel2"
+           d="m 300,215 h 30"
+           fill="none"
+           stroke="#42a5f5"
+           stroke-width="8"
+           stroke-linecap="round"
+           style="display:inline" />
+        <!-- Panel 2 -->
+        <g
+           id="inv1_mppt2_panel2"
+           style="display:inline">
+          <rect
+             x="330"
+             y="180"
+             width="120"
+             height="70"
+             rx="4"
+             fill="#263238"
+             stroke="#90a4ae"
+             stroke-width="4"
+             id="rect2-2" />
+          <line
+             x1="370"
+             y1="180"
+             x2="370"
+             y2="250"
+             stroke="#90a4ae"
+             stroke-width="2"
+             id="line3-6" />
+          <line
+             x1="410"
+             y1="180"
+             x2="410"
+             y2="250"
+             stroke="#90a4ae"
+             stroke-width="2"
+             id="line4-0" />
+        </g>
+        <!-- Panel 2 → Panel 3 -->
+        <path
+           id="inv1_mppt2_panel2_to_panel3"
+           d="m 450,215 h 30"
+           fill="none"
+           stroke="#42a5f5"
+           stroke-width="8"
+           stroke-linecap="round"
+           style="display:inline" />
+        <!-- Panel 3 -->
+        <g
+           id="inv1_mppt2_panel3"
+           style="display:inline">
+          <rect
+             x="480"
+             y="180"
+             width="120"
+             height="70"
+             rx="4"
+             fill="#263238"
+             stroke="#90a4ae"
+             stroke-width="4"
+             id="rect4-7" />
+          <line
+             x1="520"
+             y1="180"
+             x2="520"
+             y2="250"
+             stroke="#90a4ae"
+             stroke-width="2"
+             id="line17-5" />
+          <line
+             x1="560"
+             y1="180"
+             x2="560"
+             y2="250"
+             stroke="#90a4ae"
+             stroke-width="2"
+             id="line6-4" />
+        </g>
+        <!-- Panel 3 → Inverter -->
+        <path
+           id="inv1_mppt2_dc"
+           d="M 600,215 H 850"
+           fill="none"
+           stroke="#42a5f5"
+           stroke-width="8"
+           stroke-linecap="round"
+           style="display:inline" />
+      </g>
+      <!-- STRING 1 LABEL -->
+      <text
+         id="inv1_mppt2_name"
+         x="616.54456"
+         y="207.16772"
+         text-anchor="left"
+         font-family="sans-serif"
+         font-size="20px"
+         fill="#263238">MPPT 2</text>
+      <!-- STRING 1 DATA -->
+      <g
+         id="inv1_mppt2_data"
+         style="display:inline"
+         transform="translate(-0.30468502,18.597655)">
+        <text
+           id="inv1_mppt2_vdc"
+           x="180.95837"
+           y="283.01633"
+           font-family="sans-serif"
+           font-size="20px"
+           fill="#546e7a"
+           text-anchor="left">Vdc: --</text>
+        <text
+           id="inv1_mppt2_adc"
+           x="412.91254"
+           y="282.65305"
+           font-family="sans-serif"
+           font-size="20px"
+           fill="#546e7a"
+           text-anchor="left">Adc: --</text>
+        <text
+           id="inv1_mppt2_pdc"
+           x="617.63049"
+           y="282.65305"
+           font-family="sans-serif"
+           font-size="20px"
+           fill="#546e7a"
+           xml:space="default"
+           text-anchor="left"><tspan
+             x="617.63049"
+             y="282.65305"
+             id="tspan1-7">Pdc: --</tspan></text>
+      </g>
+    </g>
+    <g
+       id="inv1_mppt3"
+       display="inline"
+       style="display:inline"
+       transform="matrix(0.69705631,0,0,0.59688874,-59.021427,115.34475)"
+       sodipodi:insensitive="true">
+      <!-- STRING 1 PV PANELS -->
+      <g
+         id="inv1_mppt3_panels"
+         sodipodi:insensitive="true">
+        <!-- Panel 1 -->
+        <!-- Panel 1 → Panel 2 -->
+        <path
+           id="inv1_mppt3_Back_DCc"
+           d="m 145.51021,311.89828 c 11.41564,0 692.4032,1.59468 702.4182,1.59468"
+           fill="none"
+           stroke="#42a5f5"
+           stroke-width="8"
+           stroke-linecap="round"
+           sodipodi:nodetypes="cc"
+           inkscape:label="inv1_mppt1_Back_DCc" />
+        <path
+           id="inv1_mppt3_Back_DCb"
+           d="m 145.70482,221.67646 v 90.22192"
+           fill="none"
+           stroke="#42a5f5"
+           stroke-width="8"
+           stroke-linecap="round"
+           inkscape:label="inv1_mppt1_Back_DCb" />
+        <path
+           id="inv1_mppt3_Back_DCa"
+           d="m 145.54659,216.03286 h 30"
+           fill="none"
+           stroke="#42a5f5"
+           stroke-width="8"
+           stroke-linecap="round"
+           inkscape:label="inv1_mppt1_Back_DCa" />
+        <g
+           id="inv1_mppt3_panel1"
+           transform="translate(-152.91247,5.9583836)"
+           style="display:inline">
+          <rect
+             x="330"
+             y="180"
+             width="120"
+             height="70"
+             rx="4"
+             fill="#263238"
+             stroke="#90a4ae"
+             stroke-width="4"
+             id="rect1-4" />
+          <line
+             x1="370"
+             y1="180"
+             x2="370"
+             y2="250"
+             stroke="#90a4ae"
+             stroke-width="2"
+             id="line1-6" />
+          <line
+             x1="410"
+             y1="180"
+             x2="410"
+             y2="250"
+             stroke="#90a4ae"
+             stroke-width="2"
+             id="line2-0"
+             style="display:inline" />
+        </g>
+        <path
+           id="inv1_mppt3_panel1_to_panel2"
+           d="m 300,215 h 30"
+           fill="none"
+           stroke="#42a5f5"
+           stroke-width="8"
+           stroke-linecap="round"
+           style="display:inline" />
+        <!-- Panel 2 -->
+        <g
+           id="inv1_mppt3_panel2"
+           style="display:inline">
+          <rect
+             x="330"
+             y="180"
+             width="120"
+             height="70"
+             rx="4"
+             fill="#263238"
+             stroke="#90a4ae"
+             stroke-width="4"
+             id="rect2-1" />
+          <line
+             x1="370"
+             y1="180"
+             x2="370"
+             y2="250"
+             stroke="#90a4ae"
+             stroke-width="2"
+             id="line3-8" />
+          <line
+             x1="410"
+             y1="180"
+             x2="410"
+             y2="250"
+             stroke="#90a4ae"
+             stroke-width="2"
+             id="line4-4" />
+        </g>
+        <!-- Panel 2 → Panel 3 -->
+        <path
+           id="inv1_mppt3_panel2_to_panel3"
+           d="m 450,215 h 30"
+           fill="none"
+           stroke="#42a5f5"
+           stroke-width="8"
+           stroke-linecap="round"
+           style="display:inline" />
+        <!-- Panel 3 -->
+        <g
+           id="inv1_mppt3_panel3"
+           style="display:inline">
+          <rect
+             x="480"
+             y="180"
+             width="120"
+             height="70"
+             rx="4"
+             fill="#263238"
+             stroke="#90a4ae"
+             stroke-width="4"
+             id="rect4-3" />
+          <line
+             x1="520"
+             y1="180"
+             x2="520"
+             y2="250"
+             stroke="#90a4ae"
+             stroke-width="2"
+             id="line17-7" />
+          <line
+             x1="560"
+             y1="180"
+             x2="560"
+             y2="250"
+             stroke="#90a4ae"
+             stroke-width="2"
+             id="line6-8" />
+        </g>
+        <!-- Panel 3 → Inverter -->
+        <path
+           id="inv1_mppt3_dc"
+           d="M 600,215 H 850"
+           fill="none"
+           stroke="#42a5f5"
+           stroke-width="8"
+           stroke-linecap="round"
+           style="display:inline" />
+      </g>
+      <!-- STRING 1 LABEL -->
+      <text
+         id="inv1_mppt3_name"
+         x="616.54456"
+         y="207.16772"
+         text-anchor="left"
+         font-family="sans-serif"
+         font-size="20px"
+         fill="#263238">MPPT 3</text>
+      <!-- STRING 1 DATA -->
+      <g
+         id="inv1_mppt3_data"
+         style="display:inline"
+         transform="translate(-0.30468502,18.597655)">
+        <text
+           id="inv1_mppt3_vdc"
+           x="180.95837"
+           y="283.01633"
+           font-family="sans-serif"
+           font-size="20px"
+           fill="#546e7a"
+           text-anchor="left">Vdc: --</text>
+        <text
+           id="inv1_mppt3_adc"
+           x="412.91254"
+           y="282.65305"
+           font-family="sans-serif"
+           font-size="20px"
+           fill="#546e7a"
+           text-anchor="left">Adc: --</text>
+        <text
+           id="inv1_mppt3_pdc"
+           x="617.63049"
+           y="282.65305"
+           font-family="sans-serif"
+           font-size="20px"
+           fill="#546e7a"
+           xml:space="default"
+           text-anchor="left"><tspan
+             x="617.63049"
+             y="282.65305"
+             id="tspan1-9">Pdc: --</tspan></text>
+      </g>
+    </g>
+    <g
+       id="fronius-gen24"
+       transform="matrix(0.57907748,0,0,0.53420886,450.94362,26.042681)"
+       sodipodi:insensitive="true">
+      <!-- ================================================= -->
+      <!-- GŁÓWNA OBUDOWA                                    -->
+      <!-- ================================================= -->
+      <path
+         id="path16"
+         d="M 74,22 Q 53,22 42,39 34,51 34,70 v 455 q 0,28 25,43 11,7 28,7 h 356 q 20,0 33,-14 18,-17 18,-41 V 70 Q 494,45 480,33 467,22 446,22 Z"
+         fill="url(#housing)"
+         stroke="#d0d1d2"
+         stroke-width="2"
+         style="fill:url(#housing-7)" />
+      <!-- delikatne wewnętrzne załamanie frontu -->
+      <path
+         d="m 82,42 q -18,0 -23,17 -3,8 -3,25 v 424 q 0,34 30,41 h 357 q 29,-4 29,-37 V 82 q 0,-40 -31,-40 z"
+         fill="url(#frontWhite)"
+         opacity="0.72"
+         id="inv1-body"
+         style="fill:url(#frontWhite)" />
+      <!-- ================================================= -->
+      <!-- OKRĄGŁY PRZEŁĄCZNIK / ROZŁĄCZNIK                  -->
+      <!-- ================================================= -->
+      <g
+         id="main-switch">
+        <!-- delikatny pierścień -->
+        <circle
+           cx="91"
+           cy="207"
+           r="32"
+           fill="#e6e6e6"
+           stroke="#c8c9ca"
+           stroke-width="2"
+           id="circle17" />
+        <!-- czarna tarcza -->
+        <circle
+           cx="91"
+           cy="207"
+           r="23"
+           fill="url(#switchFace)"
+           stroke="#77787a"
+           stroke-width="1.5"
+           id="circle18"
+           style="fill:url(#switchFace)" />
+        <!-- uchwyt / nacięcie -->
+        <rect
+           x="88"
+           y="190"
+           width="6"
+           height="28"
+           rx="3"
+           fill="#0d0e10"
+           id="rect18-7" />
+        <!-- oznaczenia -->
+        <path
+           d="m 77,183 a 20,20 0 0 1 14,-4"
+           fill="none"
+           stroke="#a4a5a6"
+           stroke-width="2"
+           id="path18-7" />
+        <path
+           d="m 91,235 a 28,28 0 0 0 21,-9"
+           fill="none"
+           stroke="#bfc0c1"
+           stroke-width="1.5"
+           id="path19-9" />
+      </g>
+      <g
+         id="cooling-fan">
+        <!-- zewnętrzne zagłębienie obudowy -->
+        <circle
+           cx="264.5"
+           cy="207"
+           r="66"
+           fill="#eeeeee"
+           stroke="#d2d3d4"
+           stroke-width="2"
+           id="circle19" />
+        <!-- ciemne wnętrze wentylatora -->
+        <circle
+           cx="264.5"
+           cy="207"
+           r="59"
+           fill="url(#fanDark)"
+           stroke="#aeb0b2"
+           stroke-width="2"
+           id="circle20"
+           style="fill:url(#fanDark)" />
+        <!-- =============================================== -->
+        <!-- WEWNĘTRZNY PIERŚCIEŃ                             -->
+        <!-- =============================================== -->
+        <circle
+           cx="264.5"
+           cy="207"
+           r="48"
+           fill="none"
+           stroke="#08090a"
+           stroke-width="2"
+           opacity="0.9"
+           id="circle21" />
+        <!-- =============================================== -->
+        <!-- ŁOPATKI WENTYLATORA                             -->
+        <!-- =============================================== -->
+        <g
+           id="fan-blades"
+           fill="#151719"
+           stroke="#292b2e"
+           stroke-width="1">
+          <!-- łopatka górna -->
+          <path
+             d="M 264.5,207 C 254,188 252,161 264,153 c 14,5 22,25 15,44 -3,7 -9,10 -14.5,10 z"
+             id="path21-3" />
+          <!-- łopatka prawa-górna -->
+          <path
+             d="m 264.5,207 c 17.5,-10 42.5,-8 53.5,4 -3,14 -22,22 -40,15 -8,-3 -12,-10 -13.5,-19 z"
+             id="path22-1" />
+          <!-- łopatka prawa-dolna -->
+          <path
+             d="m 264.5,207 c 10.5,18 10.5,43 -1.5,54 -14,-4 -21,-23 -14,-41 3,-7 9,-11 15.5,-13 z"
+             id="path23-9" />
+          <!-- łopatka lewa-dolna -->
+          <path
+             d="m 264.5,207 c -18.5,10 -42.5,8 -53.5,-4 3,-14 22,-22 40,-15 7,3 12,10 13.5,19 z"
+             id="path24-8" />
+          <!-- łopatka lewa-górna -->
+          <path
+             d="M 264.5,207 C 253,190 237,168 243,155 c 14,-2 29,12 32,29 2,10 -3,18 -10.5,23 z"
+             id="path25-6" />
+        </g>
+        <!-- =============================================== -->
+        <!-- DELIKATNE ŚWIATŁO NA ŁOPATKACH                  -->
+        <!-- =============================================== -->
+        <g
+           fill="none"
+           stroke="#424448"
+           stroke-width="2"
+           opacity="0.65"
+           id="g29">
+          <path
+             d="m 265,158 c 9,11 13,26 10,35"
+             id="path26-5" />
+          <path
+             d="m 310,213 c -11,8 -23,10 -32,6"
+             id="path27" />
+          <path
+             d="m 261,255 c -8,-11 -10,-23 -7,-34"
+             id="path28" />
+          <path
+             d="m 216,201 c 12,-7 24,-7 34,-3"
+             id="path29-0" />
+        </g>
+        <!-- =============================================== -->
+        <!-- CENTRALNA PIASTA                                -->
+        <!-- =============================================== -->
+        <circle
+           cx="264.5"
+           cy="207"
+           r="15"
+           fill="#25272a"
+           stroke="#5b5d60"
+           stroke-width="2"
+           id="circle29-2" />
+        <circle
+           cx="264.5"
+           cy="207"
+           r="7"
+           fill="#111214"
+           stroke="#444649"
+           stroke-width="1"
+           id="circle30-8" />
+        <!-- środkowy refleks -->
+        <circle
+           cx="261.5"
+           cy="204"
+           r="2"
+           fill="#77797c"
+           opacity="0.65"
+           id="circle31-6" />
+      </g>
+      <!-- ================================================= -->
+      <!-- DOLNY CIEMNY PANEL                                -->
+      <!-- ================================================= -->
+      <g
+         id="lower-panel">
+        <path
+           d="m 57,350 h 415 v 163 q 0,27 -27,32 H 84 Q 57,540 57,513 Z"
+           fill="url(#darkPanel)"
+           id="path31-0"
+           style="fill:url(#darkPanel)" />
+        <!-- górna krawędź panelu -->
+        <path
+           d="M 58,350 H 471"
+           stroke="#424348"
+           stroke-width="2"
+           id="path32-2" />
+        <!-- ================================================= -->
+        <!-- MAŁY CENTRALNY ZAMEK / ZATRZASK                   -->
+        <!-- ================================================= -->
+        <g
+           id="panel-lock">
+          <path
+             d="m 237,350 h 55 l -5,9 h -45 z"
+             fill="#b7b8ba"
+             stroke="#77787a"
+             stroke-width="1"
+             id="path33-4" />
+          <rect
+             x="249"
+             y="354"
+             width="31"
+             height="8"
+             rx="3"
+             fill="#626367"
+             id="rect33" />
+          <circle
+             cx="264.5"
+             cy="358"
+             r="2"
+             fill="#1b1c1e"
+             id="circle33-8" />
+        </g>
+        <!-- ================================================= -->
+        <!-- FRONIUS LOGO                                     -->
+        <!-- ================================================= -->
+        <g
+           id="fronius-logo">
+          <!-- czerwone pole -->
+          <ellipse
+             cx="264.5"
+             cy="438"
+             rx="40"
+             ry="15"
+             fill="#e30613"
+             id="ellipse33" />
+          <!-- uproszczony biały napis -->
+          <text
+             x="264.5"
+             y="443"
+             text-anchor="middle"
+             font-family="Arial, Helvetica, sans-serif"
+             font-size="13px"
+             font-weight="700"
+             font-style="italic"
+             fill="#ffffff"
+             id="text33-6">Fronius</text>
+        </g>
+        <!-- ================================================= -->
+        <!-- GEN24                                       -->
+        <!-- ================================================= -->
+        <text
+           id="model-label-5"
+           x="435"
+           y="466"
+           text-anchor="middle"
+           font-family="Arial, Helvetica, sans-serif"
+           font-size="11px"
+           font-weight="500"
+           fill="#e2e2e3">GEN24</text>
+        <!-- delikatny dolny refleks -->
+        <path
+           d="M 82,515 H 447"
+           stroke="#3b3c40"
+           stroke-width="1"
+           opacity="0.8"
+           id="path34-0" />
+      </g>
+      <!-- ================================================= -->
+      <!-- DOLNA CZĘŚĆ BIAŁEJ OBUDOWY                         -->
+      <!-- ================================================= -->
+      <path
+         d="m 55,480 v 40 q 0,30 31,40 h 357 q 32,-10 32,-40 v -40 q -1,55 -31,64 H 85 Q 57,535 55,480 Z"
+         fill="#f1f1f1"
+         opacity="0.75"
+         id="path35-9" />
+      <!-- ================================================= -->
+      <!-- LEWY DOLNY OTWÓR / STOPKA                         -->
+      <!-- ================================================= -->
+      <g
+         id="bottom-left-foot">
+        <ellipse
+           cx="96"
+           cy="561"
+           rx="7"
+           ry="5"
+           fill="#111214"
+           id="ellipse35" />
+        <ellipse
+           cx="96"
+           cy="559"
+           rx="3"
+           ry="2"
+           fill="#35363a"
+           id="ellipse36" />
+      </g>
+      <!-- ================================================= -->
+      <!-- PRAWY DOLNY OTWÓR / STOPKA                        -->
+      <!-- ================================================= -->
+      <g
+         id="bottom-right-foot">
+        <ellipse
+           cx="433"
+           cy="561"
+           rx="7"
+           ry="5"
+           fill="#111214"
+           id="ellipse37" />
+        <ellipse
+           cx="433"
+           cy="559"
+           rx="3"
+           ry="2"
+           fill="#35363a"
+           id="ellipse38" />
+      </g>
+      <!-- ================================================= -->
+      <!-- CENTRALNY DOLNY ZACZEP                            -->
+      <!-- ================================================= -->
+      <path
+         id="bottom-center-tab"
+         d="m 253,574 h 23 l -2,10 q -1,4 -6,4 h -8 q -5,0 -6,-4 z"
+         fill="#17181a"
+         stroke="#77787a"
+         stroke-width="1" />
+      <!-- ================================================= -->
+      <!-- DELIKATNE ODBICIE NA KRAWĘDZI                     -->
+      <!-- ================================================= -->
+      <path
+         d="M 75,31 Q 55,33 48,53"
+         fill="none"
+         stroke="#ffffff"
+         stroke-width="3"
+         stroke-linecap="round"
+         opacity="0.8"
+         id="path38-0" />
+      <path
+         d="m 455,31 q 25,7 30,30"
+         fill="none"
+         stroke="#c8c9ca"
+         stroke-width="3"
+         stroke-linecap="round"
+         opacity="0.7"
+         id="path39-0" />
+    </g>
+    <g
+       id="inv1_data">
+      <text
+         id="inv1_pdc-data"
+         x="642.51971"
+         y="188.97638"
+         text-anchor="left"
+         font-family="sans-serif"
+         font-size="20px"
+         fill="#263238"
+         style="display:inline;filter:url(#shadow-9)">inv1_pdc-data</text>
+      <text
+         id="inv1_pdc-label"
+         x="472.44095"
+         y="188.97638"
+         text-anchor="left"
+         font-family="sans-serif"
+         font-size="20px"
+         fill="#263238">Power DC label:</text>
+      <text
+         id="inv1_pac-data"
+         x="642.51971"
+         y="75.590553"
+         text-anchor="left"
+         font-family="sans-serif"
+         font-size="20px"
+         fill="#263238"
+         style="display:inline;filter:url(#shadow-9)"
+         inkscape:label="inv1_pac-data">inv1_pac-data</text>
+      <text
+         id="inv1_pac-label"
+         x="472.44095"
+         y="75.590553"
+         text-anchor="left"
+         font-family="sans-serif"
+         font-size="20px"
+         fill="#263238">Power AC label:</text>
+      <text
+         id="inv1_Backup_Mode-label"
+         x="491.33859"
+         y="226.77167"
+         text-anchor="left"
+         font-family="sans-serif"
+         font-size="20px"
+         fill="#ffffff">Backup Mode label</text>
+      <text
+         id="inv1_Backup_Mode-data"
+         x="491.33859"
+         y="283.46457"
+         text-anchor="left"
+         font-family="sans-serif"
+         font-size="20px"
+         fill="#ffffff">inv1_Backup_Mode-data</text>
+      <text
+         id="inv1_name"
+         x="537.66736"
+         y="34.092949"
+         text-anchor="left"
+         font-family="sans-serif"
+         font-size="20px"
+         font-weight="bold"
+         fill="#263238"
+         style="display:inline">inv1_name</text>
+    </g>
+  </g>
+  <g
+     id="inverter_2"
+     style="display:inline"
+     sodipodi:insensitive="true">
+    <!-- ========================================================= -->
+    <!-- INVERTER 2 - DATA / CONFIG                               -->
+    <!-- ========================================================= -->
+    <!-- ========================================================= -->
+    <!-- MPPT 1 / STRING 1                                        -->
+    <!-- ========================================================= -->
+    <!-- ========================================================= -->
+    <!-- MPPT 2 / STRING 2                                        -->
+    <!-- ========================================================= -->
+    <!-- ========================================================= -->
+    <!-- MPPT 3 / STRING 3                                        -->
+    <!-- ========================================================= -->
+    <g
+       id="inv2_mppt1"
+       display="inline"
+       style="display:inline"
+       transform="matrix(0.69705631,0,0,0.59688874,-57.059719,303.96639)">
+      <!-- STRING 1 PV PANELS -->
+      <g
+         id="inv2_mppt1_panels"
+         sodipodi:insensitive="true">
+        <!-- Panel 1 -->
+        <!-- Panel 1 → Panel 2 -->
+        <path
+           id="inv1_mppt1_Back_DCc-3"
+           d="m 145.91281,312.2195 c 9.78273,0 593.361,2.41255 601.94344,2.41255"
+           fill="none"
+           stroke="#42a5f5"
+           stroke-width="8"
+           stroke-linecap="round"
+           sodipodi:nodetypes="cc"
+           inkscape:label="inv1_mppt1_Back_DCc" />
+        <path
+           id="inv1_mppt1_Back_DCb-5"
+           d="m 145.70482,221.67646 v 90.22192"
+           fill="none"
+           stroke="#42a5f5"
+           stroke-width="8"
+           stroke-linecap="round"
+           inkscape:label="inv1_mppt1_Back_DCb" />
+        <path
+           id="inv1_mppt1_Back_DCa-9"
+           d="m 145.54659,216.03286 h 30"
+           fill="none"
+           stroke="#42a5f5"
+           stroke-width="8"
+           stroke-linecap="round"
+           inkscape:label="inv1_mppt1_Back_DCa" />
+        <g
+           id="inv1_mppt1_panel1-9"
+           transform="translate(-152.91247,5.9583836)"
+           style="display:inline">
+          <rect
+             x="330"
+             y="180"
+             width="120"
+             height="70"
+             rx="4"
+             fill="#263238"
+             stroke="#90a4ae"
+             stroke-width="4"
+             id="rect1-8" />
+          <line
+             x1="370"
+             y1="180"
+             x2="370"
+             y2="250"
+             stroke="#90a4ae"
+             stroke-width="2"
+             id="line1-1" />
+          <line
+             x1="410"
+             y1="180"
+             x2="410"
+             y2="250"
+             stroke="#90a4ae"
+             stroke-width="2"
+             id="line2-8"
+             style="display:inline" />
+        </g>
+        <path
+           id="inv1_mppt1_panel1_to_panel2-2"
+           d="m 300,215 h 30"
+           fill="none"
+           stroke="#42a5f5"
+           stroke-width="8"
+           stroke-linecap="round"
+           style="display:inline" />
+        <!-- Panel 2 -->
+        <g
+           id="inv1_mppt1_panel2-6"
+           style="display:inline">
+          <rect
+             x="330"
+             y="180"
+             width="120"
+             height="70"
+             rx="4"
+             fill="#263238"
+             stroke="#90a4ae"
+             stroke-width="4"
+             id="rect2-6" />
+          <line
+             x1="370"
+             y1="180"
+             x2="370"
+             y2="250"
+             stroke="#90a4ae"
+             stroke-width="2"
+             id="line3-0" />
+          <line
+             x1="410"
+             y1="180"
+             x2="410"
+             y2="250"
+             stroke="#90a4ae"
+             stroke-width="2"
+             id="line4-3" />
+        </g>
+        <!-- Panel 2 → Panel 3 -->
+        <path
+           id="inv1_mppt1_panel2_to_panel3-8"
+           d="m 450,215 h 30"
+           fill="none"
+           stroke="#42a5f5"
+           stroke-width="8"
+           stroke-linecap="round"
+           style="display:inline" />
+        <!-- Panel 3 -->
+        <g
+           id="inv1_mppt1_panel3-0"
+           style="display:inline">
+          <rect
+             x="480"
+             y="180"
+             width="120"
+             height="70"
+             rx="4"
+             fill="#263238"
+             stroke="#90a4ae"
+             stroke-width="4"
+             id="rect4-1" />
+          <line
+             x1="520"
+             y1="180"
+             x2="520"
+             y2="250"
+             stroke="#90a4ae"
+             stroke-width="2"
+             id="line17-2" />
+          <line
+             x1="560"
+             y1="180"
+             x2="560"
+             y2="250"
+             stroke="#90a4ae"
+             stroke-width="2"
+             id="line6-5" />
+        </g>
+        <!-- Panel 3 → Inverter -->
+        <path
+           id="inv1_mppt1_dc-0"
+           d="M 600,215 H 752.25886"
+           fill="none"
+           stroke="#42a5f5"
+           stroke-width="8"
+           stroke-linecap="round"
+           style="display:inline" />
+      </g>
+      <!-- STRING 1 LABEL -->
+      <text
+         id="inv2_mppt1_name"
+         x="616.54456"
+         y="207.16772"
+         text-anchor="left"
+         font-family="sans-serif"
+         font-size="20px"
+         fill="#263238">MPPT 1</text>
+      <!-- STRING 1 DATA -->
+      <g
+         id="inv2_mppt1_data"
+         style="display:inline"
+         transform="translate(-0.30468502,18.597655)">
+        <text
+           id="inv2_mppt1_vdc"
+           x="180.95837"
+           y="283.01633"
+           font-family="sans-serif"
+           font-size="20px"
+           fill="#546e7a"
+           text-anchor="left">Vdc: --</text>
+        <text
+           id="inv2_mppt1_adc"
+           x="412.91254"
+           y="282.65305"
+           font-family="sans-serif"
+           font-size="20px"
+           fill="#546e7a"
+           text-anchor="left">Adc: --</text>
+        <text
+           id="inv2_mppt1_pdc"
+           x="617.63049"
+           y="282.65305"
+           font-family="sans-serif"
+           font-size="20px"
+           fill="#546e7a"
+           xml:space="default"
+           text-anchor="left"><tspan
+             x="617.63049"
+             y="282.65305"
+             id="tspan1-5">Pdc: --</tspan></text>
+      </g>
+    </g>
+    <g
+       id="inv2_mppt2"
+       display="inline"
+       style="display:inline"
+       transform="matrix(0.69705631,0,0,0.59688874,-57.059719,398.45458)">
+      <!-- STRING 1 PV PANELS -->
+      <g
+         id="inv2_mppt2_panels-3"
+         sodipodi:insensitive="true">
+        <!-- Panel 1 -->
+        <!-- Panel 1 → Panel 2 -->
+        <path
+           id="inv1_mppt2_Back_DCc-0"
+           d="m 145.51021,311.89828 c 9.86083,0 598.09769,1.59468 606.74865,1.59468"
+           fill="none"
+           stroke="#42a5f5"
+           stroke-width="8"
+           stroke-linecap="round"
+           sodipodi:nodetypes="cc" />
+        <path
+           id="inv1_mppt2_Back_DCb-1"
+           d="m 145.70482,221.67646 v 90.22192"
+           fill="none"
+           stroke="#42a5f5"
+           stroke-width="8"
+           stroke-linecap="round" />
+        <path
+           id="inv1_mppt2_Back_DCa-6"
+           d="m 145.54659,216.03286 h 30"
+           fill="none"
+           stroke="#42a5f5"
+           stroke-width="8"
+           stroke-linecap="round" />
+        <g
+           id="inv1_mppt2_panel1-4"
+           transform="translate(-152.91247,5.9583836)"
+           style="display:inline">
+          <rect
+             x="330"
+             y="180"
+             width="120"
+             height="70"
+             rx="4"
+             fill="#263238"
+             stroke="#90a4ae"
+             stroke-width="4"
+             id="rect1-0-0" />
+          <line
+             x1="370"
+             y1="180"
+             x2="370"
+             y2="250"
+             stroke="#90a4ae"
+             stroke-width="2"
+             id="line1-9-6" />
+          <line
+             x1="410"
+             y1="180"
+             x2="410"
+             y2="250"
+             stroke="#90a4ae"
+             stroke-width="2"
+             id="line2-7-1"
+             style="display:inline" />
+        </g>
+        <path
+           id="inv1_mppt2_panel1_to_panel2-8"
+           d="m 300,215 h 30"
+           fill="none"
+           stroke="#42a5f5"
+           stroke-width="8"
+           stroke-linecap="round"
+           style="display:inline" />
+        <!-- Panel 2 -->
+        <g
+           id="inv1_mppt2_panel2-9"
+           style="display:inline">
+          <rect
+             x="330"
+             y="180"
+             width="120"
+             height="70"
+             rx="4"
+             fill="#263238"
+             stroke="#90a4ae"
+             stroke-width="4"
+             id="rect2-2-8" />
+          <line
+             x1="370"
+             y1="180"
+             x2="370"
+             y2="250"
+             stroke="#90a4ae"
+             stroke-width="2"
+             id="line3-6-4" />
+          <line
+             x1="410"
+             y1="180"
+             x2="410"
+             y2="250"
+             stroke="#90a4ae"
+             stroke-width="2"
+             id="line4-0-1" />
+        </g>
+        <!-- Panel 2 → Panel 3 -->
+        <path
+           id="inv1_mppt2_panel2_to_panel3-4"
+           d="m 450,215 h 30"
+           fill="none"
+           stroke="#42a5f5"
+           stroke-width="8"
+           stroke-linecap="round"
+           style="display:inline" />
+        <!-- Panel 3 -->
+        <g
+           id="inv1_mppt2_panel3-3"
+           style="display:inline">
+          <rect
+             x="480"
+             y="180"
+             width="120"
+             height="70"
+             rx="4"
+             fill="#263238"
+             stroke="#90a4ae"
+             stroke-width="4"
+             id="rect4-7-9" />
+          <line
+             x1="520"
+             y1="180"
+             x2="520"
+             y2="250"
+             stroke="#90a4ae"
+             stroke-width="2"
+             id="line17-5-8" />
+          <line
+             x1="560"
+             y1="180"
+             x2="560"
+             y2="250"
+             stroke="#90a4ae"
+             stroke-width="2"
+             id="line6-4-8" />
+        </g>
+        <!-- Panel 3 → Inverter -->
+        <path
+           id="inv1_mppt2_dc-0"
+           d="M 598.42262,215 H 749.83624"
+           fill="none"
+           stroke="#42a5f5"
+           stroke-width="8"
+           stroke-linecap="round"
+           style="display:inline" />
+      </g>
+      <!-- STRING 1 LABEL -->
+      <text
+         id="inv2_mppt2_name"
+         x="616.54456"
+         y="207.16772"
+         text-anchor="left"
+         font-family="sans-serif"
+         font-size="20px"
+         fill="#263238">MPPT 2</text>
+      <!-- STRING 1 DATA -->
+      <g
+         id="inv2_mppt2_data"
+         style="display:inline"
+         transform="translate(-0.30468502,18.597655)">
+        <text
+           id="inv2_mppt2_vdc"
+           x="180.95837"
+           y="283.01633"
+           font-family="sans-serif"
+           font-size="20px"
+           fill="#546e7a"
+           text-anchor="left">Vdc: --</text>
+        <text
+           id="inv2_mppt2_adc"
+           x="412.91254"
+           y="282.65305"
+           font-family="sans-serif"
+           font-size="20px"
+           fill="#546e7a"
+           text-anchor="left">Adc: --</text>
+        <text
+           id="inv2_mppt2_pdc"
+           x="617.63049"
+           y="282.65305"
+           font-family="sans-serif"
+           font-size="20px"
+           fill="#546e7a"
+           xml:space="default"
+           text-anchor="left"><tspan
+             x="617.63049"
+             y="282.65305"
+             id="tspan1-7-8">Pdc: --</tspan></text>
+      </g>
+    </g>
+    <g
+       id="inv2_mppt3"
+       display="inline"
+       style="display:inline"
+       transform="matrix(0.69705631,0,0,0.59688874,-57.059719,492.94277)">
+      <!-- STRING 1 PV PANELS -->
+      <g
+         id="inv2_mppt3_panels"
+         sodipodi:insensitive="true">
+        <!-- Panel 1 -->
+        <!-- Panel 1 → Panel 2 -->
+        <path
+           id="inv1_mppt3_Back_DCc-1"
+           d="m 145.40992,311.77144 c 9.73138,0 590.24585,1.84836 598.78323,1.84836"
+           fill="none"
+           stroke="#42a5f5"
+           stroke-width="8"
+           stroke-linecap="round"
+           sodipodi:nodetypes="cc"
+           inkscape:label="inv1_mppt1_Back_DCc" />
+        <path
+           id="inv1_mppt3_Back_DCb-0"
+           d="m 145.70482,221.67646 v 90.22192"
+           fill="none"
+           stroke="#42a5f5"
+           stroke-width="8"
+           stroke-linecap="round"
+           inkscape:label="inv1_mppt1_Back_DCb" />
+        <path
+           id="inv1_mppt3_Back_DCa-7"
+           d="m 145.54659,216.03286 h 30"
+           fill="none"
+           stroke="#42a5f5"
+           stroke-width="8"
+           stroke-linecap="round"
+           inkscape:label="inv1_mppt1_Back_DCa" />
+        <g
+           id="inv1_mppt3_panel1-3"
+           transform="translate(-152.91247,5.9583836)"
+           style="display:inline">
+          <rect
+             x="330"
+             y="180"
+             width="120"
+             height="70"
+             rx="4"
+             fill="#263238"
+             stroke="#90a4ae"
+             stroke-width="4"
+             id="rect1-4-4" />
+          <line
+             x1="370"
+             y1="180"
+             x2="370"
+             y2="250"
+             stroke="#90a4ae"
+             stroke-width="2"
+             id="line1-6-9" />
+          <line
+             x1="410"
+             y1="180"
+             x2="410"
+             y2="250"
+             stroke="#90a4ae"
+             stroke-width="2"
+             id="line2-0-6"
+             style="display:inline" />
+        </g>
+        <path
+           id="inv1_mppt3_panel1_to_panel2-5"
+           d="m 300,215 h 30"
+           fill="none"
+           stroke="#42a5f5"
+           stroke-width="8"
+           stroke-linecap="round"
+           style="display:inline" />
+        <!-- Panel 2 -->
+        <g
+           id="inv1_mppt3_panel2-1"
+           style="display:inline">
+          <rect
+             x="330"
+             y="180"
+             width="120"
+             height="70"
+             rx="4"
+             fill="#263238"
+             stroke="#90a4ae"
+             stroke-width="4"
+             id="rect2-1-0" />
+          <line
+             x1="370"
+             y1="180"
+             x2="370"
+             y2="250"
+             stroke="#90a4ae"
+             stroke-width="2"
+             id="line3-8-9" />
+          <line
+             x1="410"
+             y1="180"
+             x2="410"
+             y2="250"
+             stroke="#90a4ae"
+             stroke-width="2"
+             id="line4-4-9" />
+        </g>
+        <!-- Panel 2 → Panel 3 -->
+        <path
+           id="inv1_mppt3_panel2_to_panel3-6"
+           d="m 450,215 h 30"
+           fill="none"
+           stroke="#42a5f5"
+           stroke-width="8"
+           stroke-linecap="round"
+           style="display:inline" />
+        <!-- Panel 3 -->
+        <g
+           id="inv1_mppt3_panel3-8"
+           style="display:inline">
+          <rect
+             x="480"
+             y="180"
+             width="120"
+             height="70"
+             rx="4"
+             fill="#263238"
+             stroke="#90a4ae"
+             stroke-width="4"
+             id="rect4-3-3" />
+          <line
+             x1="520"
+             y1="180"
+             x2="520"
+             y2="250"
+             stroke="#90a4ae"
+             stroke-width="2"
+             id="line17-7-4" />
+          <line
+             x1="560"
+             y1="180"
+             x2="560"
+             y2="250"
+             stroke="#90a4ae"
+             stroke-width="2"
+             id="line6-8-8" />
+        </g>
+        <!-- Panel 3 → Inverter -->
+        <path
+           id="inv1_mppt3_dc-4"
+           d="M 600,215 H 741.3465"
+           fill="none"
+           stroke="#42a5f5"
+           stroke-width="8"
+           stroke-linecap="round"
+           style="display:inline" />
+      </g>
+      <!-- STRING 1 LABEL -->
+      <text
+         id="inv2_mppt3_name"
+         x="616.54456"
+         y="207.16772"
+         text-anchor="left"
+         font-family="sans-serif"
+         font-size="20px"
+         fill="#263238">MPPT 3</text>
+      <!-- STRING 1 DATA -->
+      <g
+         id="inv2_mppt3_data"
+         style="display:inline"
+         transform="translate(-0.30468502,18.597655)">
+        <text
+           id="inv2_mppt3_vdc"
+           x="180.95837"
+           y="283.01633"
+           font-family="sans-serif"
+           font-size="20px"
+           fill="#546e7a"
+           text-anchor="left">Vdc: --</text>
+        <text
+           id="inv2_mppt3_adc"
+           x="412.91254"
+           y="282.65305"
+           font-family="sans-serif"
+           font-size="20px"
+           fill="#546e7a"
+           text-anchor="left">Adc: --</text>
+        <text
+           id="inv2_mppt3_pdc"
+           x="617.63049"
+           y="282.65305"
+           font-family="sans-serif"
+           font-size="20px"
+           fill="#546e7a"
+           xml:space="default"
+           text-anchor="left"><tspan
+             x="617.63049"
+             y="282.65305"
+             id="tspan1-9-3">Pdc: --</tspan></text>
+      </g>
+    </g>
+    <!-- ========================================================= -->
+    <!-- INVERTER 2                                                -->
+    <!-- ========================================================= -->
+    <g
+       id="sma-tripower-smart-energy"
+       filter="url(#shadow)"
+       style="filter:url(#shadow-4)"
+       transform="matrix(0.56125033,0,0,0.53296664,446.51127,396.57547)">
+      <!-- ================================================= -->
+      <!-- TYLNA / BOCZNA CZĘŚĆ OBUDOWY                     -->
+      <!-- ================================================= -->
+      <path
+         id="housing-back"
+         d="M 84,20 Q 59,20 45,39 34,54 32,79 v 429 q 0,31 17,48 15,17 41,20 h 348 q 28,-3 44,-22 14,-17 15,-46 V 78 Q 496,50 482,35 467,20 441,20 Z"
+         fill="url(#side)"
+         stroke="#c4c6c8"
+         stroke-width="2"
+         style="fill:url(#side)" />
+      <!-- ================================================= -->
+      <!-- GŁÓWNY FRONT                                     -->
+      <!-- ================================================= -->
+      <path
+         id="inv2-body"
+         d="M 91,30 Q 68,30 56,48 47,61 45,83 v 417 q 0,28 14,43 13,14 36,17 h 339 q 24,-3 37,-20 12,-15 13,-40 V 83 Q 482,59 470,46 456,30 432,30 Z"
+         fill="url(#housing)"
+         stroke="#d0d2d4"
+         stroke-width="1.5"
+         style="fill:url(#housing)" />
+      <!-- ================================================= -->
+      <!-- WYPukła CENTRALNA POWIERZCHNIA                    -->
+      <!-- ================================================= -->
+      <path
+         id="front-panel"
+         d="M 100,50 Q 81,50 72,64 65,75 64,96 v 392 q 0,25 11,37 12,13 32,16 h 317 q 21,-3 32,-18 10,-13 10,-35 V 95 Q 465,73 455,61 444,50 424,50 Z"
+         fill="url(#front)"
+         stroke="#e1e2e3"
+         stroke-width="1"
+         style="fill:url(#front)" />
+      <!-- ================================================= -->
+      <!-- DELIKATNE ZAŁAMANIE GÓRNE                        -->
+      <!-- ================================================= -->
+      <path
+         d="M 98,51 Q 80,51 71,68"
+         fill="none"
+         stroke="#ffffff"
+         stroke-width="4"
+         stroke-linecap="round"
+         opacity="0.85"
+         id="path17" />
+      <path
+         d="m 424,51 q 22,0 32,17"
+         fill="none"
+         stroke="#d5d6d8"
+         stroke-width="3"
+         stroke-linecap="round"
+         opacity="0.8"
+         id="path18-5" />
+      <!-- ================================================= -->
+      <!-- LOGO SMA                                         -->
+      <!-- ================================================= -->
+      <g
+         id="sma-logo">
+        <!-- białe podłoże / delikatna ramka -->
+        <rect
+           x="368"
+           y="79"
+           width="50"
+           height="35"
+           rx="2"
+           fill="#f0f0f1"
+           opacity="0.35"
+           id="rect18" />
+        <!-- logo SMA -->
+        <path
+           d="m 373,82 h 39 l -2,28 h -40 z"
+           fill="#ffffff"
+           stroke="#d1d2d4"
+           stroke-width="0.6"
+           id="path19-2" />
+        <!-- niebieskie pole -->
+        <path
+           d="m 374,83 h 36 l -2,17 h -36 z"
+           fill="#34759a"
+           id="path20-7" />
+        <!-- czerwone pole -->
+        <path
+           d="m 372,100 h 36 v 9 h -37 z"
+           fill="#d51f2b"
+           id="path21-6" />
+        <!-- SMA -->
+        <text
+           x="391"
+           y="97"
+           text-anchor="middle"
+           font-family="Arial, Helvetica, sans-serif"
+           font-size="12px"
+           font-weight="700"
+           fill="#ffffff"
+           id="text21">SMA</text>
+      </g>
+      <!-- ================================================= -->
+      <!-- NAPIS SUNNY TRIPOWER                              -->
+      <!-- ================================================= -->
+      <g
+         id="model-label">
+        <text
+           x="93"
+           y="470"
+           font-family="Arial, Helvetica, sans-serif"
+           font-size="10px"
+           font-weight="600"
+           fill="#383b3d"
+           id="text22">SUNNY TRIPOWER</text>
+        <text
+           x="93"
+           y="482"
+           font-family="Arial, Helvetica, sans-serif"
+           font-size="8.5px"
+           font-weight="400"
+           fill="#676a6c"
+           id="text23">SMART ENERGY</text>
+      </g>
+      <!-- ================================================= -->
+      <!-- DOLNY PANEL STATUSU                               -->
+      <!-- ================================================= -->
+      <g
+         id="status-panel">
+        <!-- czarna obudowa -->
+        <rect
+           x="296"
+           y="456"
+           width="126"
+           height="34"
+           rx="7"
+           fill="url(#statusPanel)"
+           stroke="#383a3d"
+           stroke-width="1"
+           id="rect23"
+           style="fill:url(#statusPanel)" />
+        <!-- subtelne odbicie górnej krawędzi -->
+        <path
+           d="M 303,458 H 415"
+           stroke="#55575a"
+           stroke-width="1"
+           opacity="0.7"
+           id="path23-1" />
+        <!-- ============================================= -->
+        <!-- IKONA PV                                       -->
+        <!-- ============================================= -->
+        <g
+           id="status-pv">
+          <rect
+             x="304"
+             y="465"
+             width="13"
+             height="10"
+             rx="1"
+             fill="none"
+             stroke="#bfc2c4"
+             stroke-width="1"
+             id="rect24-4" />
+          <path
+             d="m 306,468 h 9 m -9,3 h 9 m -6,-6 v 10 m 4,-10 v 10"
+             stroke="#8c9093"
+             stroke-width="0.7"
+             id="path24-2" />
+        </g>
+        <!-- ============================================= -->
+        <!-- ZIELONA DIODA                                 -->
+        <!-- ============================================= -->
+        <g
+           id="status-green">
+          <circle
+             cx="329"
+             cy="473"
+             r="6"
+             fill="#152b1a"
+             stroke="#38443b"
+             stroke-width="1"
+             id="circle24-3" />
+          <circle
+             id="led-green"
+             cx="329"
+             cy="473"
+             r="4"
+             fill="#55ee67" />
+          <circle
+             cx="327.5"
+             cy="471.5"
+             r="1.3"
+             fill="#caffcf"
+             opacity="0.8"
+             id="circle25-2" />
+        </g>
+        <!-- ============================================= -->
+        <!-- SYMBOL SIECI / AC                             -->
+        <!-- ============================================= -->
+        <g
+           id="status-grid">
+          <rect
+             x="342"
+             y="466"
+             width="14"
+             height="13"
+             rx="2"
+             fill="none"
+             stroke="#9fa2a5"
+             stroke-width="1"
+             id="rect25-2" />
+          <path
+             d="m 345,473 h 8"
+             stroke="#bfc2c4"
+             stroke-width="1"
+             id="path25-1" />
+          <path
+             d="m 349,469 v 8"
+             stroke="#bfc2c4"
+             stroke-width="1"
+             id="path26" />
+        </g>
+        <!-- ============================================= -->
+        <!-- BATERIA                                       -->
+        <!-- ============================================= -->
+        <g
+           id="status-battery">
+          <rect
+             x="365"
+             y="467"
+             width="15"
+             height="11"
+             rx="2"
+             fill="none"
+             stroke="#aeb1b3"
+             stroke-width="1"
+             id="rect26-6" />
+          <rect
+             x="380"
+             y="470"
+             width="2"
+             height="5"
+             rx="1"
+             fill="#aeb1b3"
+             id="rect27-8" />
+          <rect
+             x="368"
+             y="470"
+             width="8"
+             height="5"
+             rx="1"
+             fill="#8b8f92"
+             opacity="0.8"
+             id="rect28-5" />
+        </g>
+        <!-- ============================================= -->
+        <!-- NIEBIESKA DIODA                               -->
+        <!-- ============================================= -->
+        <g
+           id="status-blue">
+          <circle
+             cx="404"
+             cy="473"
+             r="6"
+             fill="#122538"
+             stroke="#394653"
+             stroke-width="1"
+             id="circle28" />
+          <circle
+             id="led-blue"
+             cx="404"
+             cy="473"
+             r="4"
+             fill="#259cff" />
+          <circle
+             cx="402.5"
+             cy="471.5"
+             r="1.2"
+             fill="#bfe5ff"
+             opacity="0.85"
+             id="circle29-7" />
+        </g>
+      </g>
+      <!-- ================================================= -->
+      <!-- DOLNA KRAWĘDŹ                                    -->
+      <!-- ================================================= -->
+      <path
+         d="M 94,541 Q 70,538 61,523"
+         fill="none"
+         stroke="#ffffff"
+         stroke-width="2"
+         opacity="0.65"
+         id="path29" />
+      <path
+         d="m 435,541 q 21,-4 31,-22"
+         fill="none"
+         stroke="#c8cacc"
+         stroke-width="2"
+         opacity="0.75"
+         id="path30" />
+      <!-- ================================================= -->
+      <!-- LEWY BOCZNY ELEMENT MONTAŻOWY                    -->
+      <!-- ================================================= -->
+      <g
+         id="left-side-detail">
+        <path
+           d="m 45,265 q -9,4 -10,15 v 30 q 1,10 10,13 z"
+           fill="#b7b9bb"
+           stroke="#a8aaac"
+           stroke-width="1"
+           id="path31" />
+        <path
+           d="m 38,280 v 30"
+           stroke="#8f9295"
+           stroke-width="2"
+           id="path32" />
+      </g>
+      <!-- ================================================= -->
+      <!-- PRAWY BOCZNY ŻEBERKOWANY ELEMENT                 -->
+      <!-- ================================================= -->
+      <g
+         id="right-side-detail">
+        <path
+           d="m 484,236 q 9,4 10,14 v 65 q -1,10 -10,14 z"
+           fill="#b8babc"
+           opacity="0.9"
+           id="path33" />
+        <g
+           stroke="#85888a"
+           stroke-width="1"
+           opacity="0.7"
+           id="g42">
+          <path
+             d="m 486,247 h 8"
+             id="path34" />
+          <path
+             d="m 486,255 h 8"
+             id="path35" />
+          <path
+             d="m 486,263 h 8"
+             id="path36" />
+          <path
+             d="m 486,271 h 8"
+             id="path37" />
+          <path
+             d="m 486,279 h 8"
+             id="path38-6" />
+          <path
+             d="m 486,287 h 8"
+             id="path39" />
+          <path
+             d="m 486,295 h 8"
+             id="path40" />
+          <path
+             d="m 486,303 h 8"
+             id="path41" />
+          <path
+             d="m 486,311 h 8"
+             id="path42" />
+        </g>
+      </g>
+      <!-- ================================================= -->
+      <!-- DOLNE ZAOKRĄGLENIE                               -->
+      <!-- ================================================= -->
+      <path
+         d="M 84,558 Q 63,554 54,538"
+         fill="none"
+         stroke="#c5c7c9"
+         stroke-width="2"
+         opacity="0.8"
+         id="path43" />
+      <path
+         d="m 446,558 q 21,-6 30,-23"
+         fill="none"
+         stroke="#c1c3c5"
+         stroke-width="2"
+         opacity="0.8"
+         id="path44" />
+    </g>
+    <g
+       id="inv2_data"
+       inkscape:label="inv2_data_main"
+       style="display:inline">
+      <text
+         id="inv2_pdc-label"
+         x="472.44095"
+         y="548.03149"
+         text-anchor="left"
+         font-family="sans-serif"
+         font-size="20px"
+         fill="#263238">Power DC label:</text>
+      <text
+         id="inv2_pdc-data"
+         x="634.96063"
+         y="548.03149"
+         text-anchor="left"
+         font-family="sans-serif"
+         font-size="20px"
+         fill="#263238"
+         style="display:inline;filter:url(#shadow-9-3)">inv2_pdc-data</text>
+      <text
+         id="inv2_pac-data"
+         x="632.26996"
+         y="489.5719"
+         text-anchor="left"
+         font-family="sans-serif"
+         font-size="20px"
+         fill="#263238"
+         style="display:inline;filter:url(#shadow-9-3)"
+         inkscape:label="inv1_pac-data">inv2_pac-data</text>
+      <text
+         id="inv2_pac-label"
+         x="472.44095"
+         y="491.33859"
+         text-anchor="left"
+         font-family="sans-serif"
+         font-size="20px"
+         fill="#263238"
+         style="display:inline;filter:url(#shadow-9-3)">Power AC label:</text>
+      <text
+         id="inv2_Backup_Mode-label"
+         x="472.44095"
+         y="604.72443"
+         text-anchor="left"
+         font-family="sans-serif"
+         font-size="20px"
+         fill="#263238">Backup Mode label</text>
+      <text
+         id="inv2_Backup_Mode-data"
+         x="472.68509"
+         y="623.94318"
+         text-anchor="left"
+         font-family="sans-serif"
+         font-size="20px"
+         fill="#263238">inv2_Backup_Mode-data</text>
+      <text
+         id="inv2_name"
+         x="585.82678"
+         y="396.8504"
+         text-anchor="middle"
+         font-family="sans-serif"
+         font-size="20px"
+         font-weight="bold"
+         fill="#263238"
+         style="display:inline">inv2_name</text>
+    </g>
+  </g>
+  <g
+     id="EnergyStorage"
+     inkscape:label="EnergyStorage"
+     style="display:inline">
+    <g
+       id="EnergyStorageBody"
+       transform="translate(-914.51925,-114.37635)">
+      <rect
+         id="rect3"
+         x="1802.0992"
+         y="210.0031"
+         width="164.87621"
+         height="297.30533"
+         rx="10.991747"
+         fill="#53fdbc"
+         stroke="#37474f"
+         stroke-width="5.1388"
+         inkscape:label="EnergyStorageBody" />
+      <rect
+         style="fill:#000000"
+         id="EnergyStorageSplit3"
+         width="162.74449"
+         height="9.7368498"
+         x="1802.7083"
+         y="279.58667"
+         inkscape:label="EnergyStorageSplit3" />
+      <rect
+         style="fill:#000000"
+         id="EnergyStorageSplit2"
+         width="162.74449"
+         height="9.7368498"
+         x="1802.0902"
+         y="353.63165"
+         inkscape:label="EnergyStorageSplit2" />
+      <rect
+         style="fill:#000000"
+         id="EnergyStorageSplit1"
+         width="162.74449"
+         height="9.7368498"
+         x="1804.9098"
+         y="425.86469"
+         inkscape:label="EnergyStorageSplit1" />
+      <path
+         d="m 1886.009,429.72247 -20.9282,40.38876 h 16.5226 l -6.6091,36.87672 25.3344,-43.90085 h -16.5226 z"
+         id="EnergyStorageSign"
+         fill="#ffd700"
+         stroke="#000000"
+         stroke-width="1.74071"
+         stroke-linejoin="round"
+         stroke-linecap="round" />
+    </g>
+    <g
+       id="EnergyStorageText"
+       sodipodi:insensitive="true">
+      <text
+         id="EnergyStorageName"
+         x="866.94763"
+         y="63.074467"
+         font-family="sans-serif"
+         font-size="24px"
+         fill="#546e7a"
+         style="stroke-width:1.19901">EnergyStorageName</text>
+      <text
+         id="EnergyStorageCapacity"
+         x="866.94763"
+         y="89.531158"
+         font-family="sans-serif"
+         font-size="24px"
+         fill="#546e7a"
+         style="stroke-width:1.19901"
+         inkscape:label="EnergyStorageCapacity">EnergyStorageCapacity</text>
+    </g>
+    <g
+       id="EnergyStorageData">
+      <text
+         id="EnergyStorageTemp-label"
+         x="891.96851"
+         y="162.51968"
+         text-anchor="left"
+         font-family="sans-serif"
+         font-size="20px"
+         fill="#263238"
+         style="display:inline;stroke-width:1.19901">Temp:</text>
+      <text
+         id="EnergyStorageTemp-data"
+         x="956.22052"
+         y="162.51968"
+         text-anchor="left"
+         font-family="sans-serif"
+         font-size="20px"
+         fill="#263238"
+         style="display:inline;stroke-width:1.19901">Temp data</text>
+      <text
+         id="EnergyStorageSOC-label"
+         x="890.65991"
+         y="143.31932"
+         text-anchor="left"
+         font-family="sans-serif"
+         font-size="20px"
+         fill="#263238"
+         style="stroke-width:1.19901">SOC:</text>
+      <text
+         id="EnergyStorageSOC-data"
+         x="954.91193"
+         y="143.69925"
+         text-anchor="left"
+         font-family="sans-serif"
+         font-size="20px"
+         fill="#263238"
+         style="display:inline;stroke-width:1.19901">SOC data</text>
+      <text
+         id="EnergyStoragePower-label"
+         x="890.01538"
+         y="120.64215"
+         text-anchor="left"
+         font-family="sans-serif"
+         font-size="20px"
+         fill="#263238"
+         style="stroke-width:1.19901">Power:</text>
+      <text
+         id="EnergyStoragePower-data"
+         x="958.19336"
+         y="116.92145"
+         text-anchor="left"
+         font-family="sans-serif"
+         font-size="20px"
+         fill="#263238"
+         style="display:inline;stroke-width:1.19901">power-data</text>
+      <text
+         id="EnergyStorageStateChargeDischarge"
+         x="1071.703"
+         y="197.03082"
+         text-anchor="left"
+         font-family="sans-serif"
+         font-size="20px"
+         fill="#263238"
+         transform="scale(0.83127579,1.2029702)"
+         style="stroke-width:1.19901">State: --</text>
+      <text
+         id="Battery_Vdc-label"
+         x="1071.0585"
+         y="162.38612"
+         text-anchor="left"
+         font-family="sans-serif"
+         font-size="20px"
+         fill="#263238"
+         transform="scale(0.83127579,1.2029702)"
+         style="display:inline;stroke-width:1.19901">Battery Voltage:</text>
+      <text
+         id="Battery_Vdc-data"
+         x="1071.0585"
+         y="178.57047"
+         text-anchor="left"
+         font-family="sans-serif"
+         font-size="20px"
+         fill="#263238"
+         transform="scale(0.83127579,1.2029702)"
+         style="display:inline;stroke-width:1.19901">Battery Voltage data</text>
+      <text
+         id="Battery_Current-label"
+         x="1071.0585"
+         y="225.22272"
+         text-anchor="left"
+         font-family="sans-serif"
+         font-size="20px"
+         fill="#263238"
+         transform="scale(0.83127579,1.2029702)"
+         style="display:inline;stroke-width:1.19901">Battery Current:</text>
+      <text
+         id="Battery_Current-data"
+         x="1071.0585"
+         y="244.44147"
+         text-anchor="left"
+         font-family="sans-serif"
+         font-size="20px"
+         fill="#263238"
+         transform="scale(0.83127579,1.2029702)"
+         style="display:inline;stroke-width:1.19901"
+         inkscape:label="Battery_Current-data">Battery Current data</text>
+    </g>
+  </g>
+  <g
+     id="Grid"
+     transform="matrix(1.1604091,0,0,3.2024017,1782.8422,733.84018)"
+     style="display:inline"
+     sodipodi:insensitive="true">
+    <path
+       d="m 40,90 5,-70 h 10 l 5,70 z"
+       fill="none"
+       stroke="currentColor"
+       stroke-width="3"
+       stroke-linejoin="round"
+       id="path2" />
+    <path
+       d="M 40,90 60,70 M 60,90 40,70 m 2.5,0 15,-20 m 0,20 -15,-20 M 45,50 55,32 M 55,50 45,32 m 2.5,0 5,-12 m 0,12 -5,-12"
+       fill="none"
+       stroke="currentColor"
+       stroke-width="2"
+       stroke-linecap="round"
+       id="path3" />
+    <path
+       d="M 41.3,80 H 58.7 M 42.5,70 h 15 M 45,50 H 55 M 47.5,32 h 5"
+       fill="none"
+       stroke="currentColor"
+       stroke-width="2"
+       id="path4" />
+    <path
+       d="M 20,35 H 80"
+       fill="none"
+       stroke="currentColor"
+       stroke-width="3"
+       stroke-linecap="round"
+       id="path5" />
+    <path
+       d="M 25,55 H 75"
+       fill="none"
+       stroke="currentColor"
+       stroke-width="3"
+       stroke-linecap="round"
+       id="path6" />
+    <path
+       d="m 22,35 v 8 m 13,-8 v 8 m 30,-8 v 8 m 13,-8 v 8 M 27,55 v 8 m 46,-8 v 8"
+       fill="none"
+       stroke="currentColor"
+       stroke-width="2"
+       stroke-linecap="round"
+       id="path7" />
+    <path
+       d="m 5,43 q 17,4 30,0 15,2 30,0 13,4 30,0 M 5,63 q 22,4 45,2 23,2 45,-2"
+       fill="none"
+       stroke="currentColor"
+       stroke-width="1.5"
+       opacity="0.7"
+       id="path8" />
+  </g>
+  <defs
+     id="defs24">
+    <!-- Cień pod pompą -->
+    <radialGradient
+       id="shadow"
+       cx="126.49111"
+       cy="2909.2954"
+       r="94.868332"
+       gradientTransform="scale(3.1622777,0.31622777)"
+       fx="126.49111"
+       fy="2909.2954"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         stop-color="#000000"
+         stop-opacity="0.2"
+         id="stop1" />
+      <stop
+         offset="100%"
+         stop-color="#000000"
+         stop-opacity="0"
+         id="stop2" />
+    </radialGradient>
+    <!-- Klasyczna BIAŁA obudowa Panasonic Gen. H -->
+    <linearGradient
+       id="panasonic-white-body"
+       x1="218.37772"
+       y1="67.699219"
+       x2="821.51617"
+       y2="670.83765"
+       gradientTransform="scale(0.76930926,1.2998674)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         stop-color="#ffffff"
+         id="stop3" />
+      <stop
+         offset="75%"
+         stop-color="#f1f5f9"
+         id="stop4" />
+      <stop
+         offset="100%"
+         stop-color="#e2e8f0"
+         id="stop5" />
+    </linearGradient>
+    <!-- Bardzo ciemne, głębokie wnęki wentylatorów -->
+    <linearGradient
+       id="grill-bg"
+       x1="0"
+       y1="0"
+       x2="0"
+       y2="1">
+      <stop
+         offset="0%"
+         stop-color="#0f172a"
+         id="stop6" />
+      <stop
+         offset="100%"
+         stop-color="#1e293b"
+         id="stop7" />
+    </linearGradient>
+    <!-- Szary pierścień maskujący wokół grilla (charakterystyczny dla białych modeli) -->
+    <linearGradient
+       id="grill-ring"
+       x1="0"
+       y1="0"
+       x2="1"
+       y2="1">
+      <stop
+         offset="0%"
+         stop-color="#cbd5e1"
+         id="stop8" />
+      <stop
+         offset="100%"
+         stop-color="#94a3b8"
+         id="stop9" />
+    </linearGradient>
+    <!-- Kompletny moduł wentylatora generacji H -->
+    <g
+       id="fan-assembly-gen-h">
+      <!-- Tło i maskownica zewnętrzna -->
+      <circle
+         cx="0"
+         cy="0"
+         r="145"
+         fill="url(#grill-bg)"
+         stroke="url(#grill-ring)"
+         stroke-width="6"
+         id="circle23" />
+      <!-- Gęste ożebrowanie ochronne grilla (okręgi) -->
+      <circle
+         cx="0"
+         cy="0"
+         r="120"
+         fill="none"
+         stroke="#334155"
+         stroke-width="2"
+         opacity="0.8"
+         id="circle10" />
+      <circle
+         cx="0"
+         cy="0"
+         r="95"
+         fill="none"
+         stroke="#334155"
+         stroke-width="2"
+         opacity="0.8"
+         id="circle24" />
+      <circle
+         cx="0"
+         cy="0"
+         r="70"
+         fill="none"
+         stroke="#334155"
+         stroke-width="2"
+         opacity="0.8"
+         id="circle25" />
+      <!-- Pionowe i poziome druty wzmacniające grill -->
+      <line
+         x1="0"
+         y1="-145"
+         x2="0"
+         y2="145"
+         stroke="#0f172a"
+         stroke-width="3"
+         id="line25" />
+      <line
+         x1="-145"
+         y1="0"
+         x2="145"
+         y2="0"
+         stroke="#0f172a"
+         stroke-width="3"
+         id="line26" />
+      <!-- Czarne profilowane łopatki wentylatora -->
+      <g
+         fill="#020617"
+         id="g23">
+        <path
+           d="M 0,0 C -30,-70 -45,-115 0,-135 30,-150 40,-90 0,0 Z"
+           id="path20" />
+        <path
+           d="M 0,0 C 70,-30 115,-45 135,0 150,30 90,40 0,0 Z"
+           id="path21" />
+        <path
+           d="M 0,0 C 30,70 40,115 0,135 -30,150 -40,90 0,0 Z"
+           id="path22" />
+        <path
+           d="M 0,0 C -70,25 -115,45 -135,0 -150,-30 -90,-40 0,0 Z"
+           id="path23" />
+      </g>
+      <!-- Środkowy stożek piasty -->
+      <circle
+         cx="0"
+         cy="0"
+         r="28"
+         fill="#1e293b"
+         stroke="#334155"
+         stroke-width="2"
+         id="circle26" />
+      <circle
+         cx="0"
+         cy="0"
+         r="6"
+         fill="#64748b"
+         id="circle27" />
+    </g>
+  </defs>
+  <g
+     id="g38"
+     inkscape:label="HeatPump"
+     style="display:inline"
+     sodipodi:insensitive="true">
+    <g
+       id="HeatPump_body"
+       transform="matrix(0.51423688,0,0,0.37625183,1430.5594,384.70215)">
+      <ellipse
+         cx="400"
+         cy="920"
+         rx="300"
+         ry="30"
+         fill="url(#shadow)"
+         id="ellipse24"
+         style="fill:url(#shadow)" />
+      <g
+         id="feet"
+         fill="#475569"
+         stroke="#334155"
+         stroke-width="2">
+        <rect
+           x="220"
+           y="870"
+           width="60"
+           height="30"
+           rx="3"
+           id="rect24" />
+        <rect
+           x="520"
+           y="870"
+           width="60"
+           height="30"
+           rx="3"
+           id="rect25" />
+        <!-- Wibroizolacja / gumy (tzw. "Big Foot") -->
+        <rect
+           x="200"
+           y="900"
+           width="100"
+           height="15"
+           rx="4"
+           fill="#1e293b"
+           id="rect26" />
+        <rect
+           x="500"
+           y="900"
+           width="100"
+           height="15"
+           rx="4"
+           fill="#1e293b"
+           id="rect27" />
+      </g>
+      <rect
+         x="170"
+         y="90"
+         width="460"
+         height="780"
+         rx="8"
+         fill="url(#panasonic-white-body)"
+         stroke="#cbd5e1"
+         stroke-width="4"
+         id="rect28"
+         style="fill:url(#panasonic-white-body)" />
+      <use
+         href="#fan-assembly-gen-h"
+         x="400"
+         y="315"
+         id="use28" />
+      <use
+         href="#fan-assembly-gen-h"
+         x="400"
+         y="635"
+         id="use29" />
+      <line
+         x1="535"
+         y1="90"
+         x2="535"
+         y2="870"
+         stroke="#cbd5e1"
+         stroke-width="2"
+         id="line29" />
+      <g
+         fill="#94a3b8"
+         id="g33"
+         style="display:inline">
+        <circle
+           cx="555"
+           cy="120"
+           r="3.5"
+           id="circle29" />
+        <circle
+           cx="605"
+           cy="120"
+           r="3.5"
+           id="circle30" />
+        <circle
+           cx="555"
+           cy="480"
+           r="3.5"
+           id="circle31" />
+        <circle
+           cx="555"
+           cy="840"
+           r="3.5"
+           id="circle32" />
+        <circle
+           cx="605"
+           cy="840"
+           r="3.5"
+           id="circle33" />
+      </g>
+      <g
+         stroke="#cbd5e1"
+         stroke-width="3"
+         stroke-linecap="round"
+         opacity="0.8"
+         id="g35"
+         style="display:inline">
+        <line
+           x1="195"
+           y1="150"
+           x2="195"
+           y2="230"
+           id="line33" />
+        <line
+           x1="195"
+           y1="440"
+           x2="195"
+           y2="520"
+           id="line34" />
+        <line
+           x1="195"
+           y1="710"
+           x2="195"
+           y2="790"
+           id="line35" />
+      </g>
+      <g
+         id="branding-gen-h">
+        <!-- Logotyp Panasonic (Klasyczny, ciemnoniebieski font, wycentrowany na przednim pasie) -->
+        <text
+           x="400"
+           y="140"
+           fill="#0f2c59"
+           font-family="Helvetica, Arial, sans-serif"
+           font-size="16px"
+           font-weight="bold"
+           letter-spacing="3"
+           text-anchor="middle"
+           id="text35">Panasonic</text>
+        <!-- Małe logo technologii INVERTER na środku pod logiem głównym -->
+        <text
+           x="400"
+           y="155"
+           fill="#64748b"
+           font-family="Arial, sans-serif"
+           font-size="8px"
+           font-weight="bold"
+           letter-spacing="1"
+           text-anchor="middle"
+           id="text36">INVERTER</text>
+        <!-- Płytka serii Aquarea na bocznym panelu serwisowym -->
+        <rect
+           x="545"
+           y="170"
+           width="70"
+           height="22"
+           rx="2"
+           fill="#e2e8f0"
+           stroke="#cbd5e1"
+           stroke-width="1"
+           id="rect36" />
+        <text
+           x="580"
+           y="184"
+           fill="#475569"
+           font-family="Arial, sans-serif"
+           font-size="9px"
+           font-weight="bold"
+           text-anchor="middle"
+           letter-spacing="0.5"
+           id="text37">AQUAREA</text>
+        <!-- Oznaczenie T-CAP (Zielony akcent Panasonic na dole panelu bocznego) -->
+        <text
+           x="550"
+           y="800"
+           fill="#16a34a"
+           font-family="Arial, sans-serif"
+           font-size="12px"
+           font-weight="bold"
+           letter-spacing="0.5"
+           id="text38">T-CAP</text>
+      </g>
+      <path
+         d="M 170,102 V 90 h 460 v 12 z"
+         fill="#cbd5e1"
+         opacity="0.3"
+         id="path38" />
+    </g>
+    <g
+       id="HeatPump_data">
+      <text
+         id="HeatPump-power-L3-data"
+         x="1795.2756"
+         y="604.72443"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="20px"
+         fill="#455268">-- W</text>
+      <text
+         id="HeatPump-power-L2-data"
+         x="1795.2756"
+         y="566.92914"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="20px"
+         fill="#455268">-- W</text>
+      <text
+         id="HeatPump-power-L1-data"
+         x="1795.2756"
+         y="529.13385"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="20px"
+         fill="#455268">-- W</text>
+      <text
+         x="1795.2756"
+         y="472.44095"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="20px"
+         fill="#455268"
+         id="HeatPump-power-label">Moc</text>
+      <text
+         id="HeatPump-current-L3-data"
+         x="1455.1182"
+         y="604.72443"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="20px"
+         fill="#455268">-- A</text>
+      <text
+         id="HeatPump-current-L2-data"
+         x="1458.4298"
+         y="566.92914"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="20px"
+         fill="#455268">-- A</text>
+      <text
+         id="HeatPump-current-L1-data"
+         x="1458.4298"
+         y="529.13385"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="20px"
+         fill="#455268">-- A</text>
+      <text
+         x="1455.1182"
+         y="472.44095"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="20px"
+         fill="#455268"
+         id="HeatPump-current-label">PRĄD</text>
+      <text
+         id="HeatPump-power-total-data"
+         x="1713.7875"
+         y="396.8504"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="20px"
+         fill="#455268">-- W</text>
+      <text
+         x="1582.1462"
+         y="396.61603"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="20px"
+         fill="#455268"
+         id="HeatPump-power-total-label">Moc całkowita</text>
+    </g>
+  </g>
+  <defs
+     id="defs2">
+    <!-- ============================================= -->
+    <!-- GLOW OBRYSU DOMU                              -->
+    <!-- ============================================= -->
+    <filter
+       id="houseGlow"
+       x="-0.018394915"
+       y="-0.02599972"
+       width="1.0367898"
+       height="1.0519997">
+      <feGaussianBlur
+         in="SourceGraphic"
+         stdDeviation="3"
+         result="blur"
+         id="feGaussianBlur27" />
+      <feMerge
+         id="feMerge28">
+        <feMergeNode
+           in="blur"
+           id="feMergeNode27" />
+        <feMergeNode
+           in="SourceGraphic"
+           id="feMergeNode28" />
+      </feMerge>
+    </filter>
+  </defs>
+  <!-- ================================================= -->
+  <!-- DOM                                               -->
+  <!-- ================================================= -->
+  <g
+     id="house"
+     style="display:inline"
+     sodipodi:insensitive="true">
+    <!-- ================================================= -->
+    <!-- OBRYS: DACH + OKAP + ŚCIANY                       -->
+    <!-- ================================================= -->
+    <!-- ================================================= -->
+    <!-- WEWNĘTRZNA LINIA DACHU                            -->
+    <!-- ================================================= -->
+    <!-- ================================================= -->
+    <!-- OKAP LEWY                                         -->
+    <!-- ================================================= -->
+    <!-- ================================================= -->
+    <!-- OKAP PRAWY                                        -->
+    <!-- ================================================= -->
+    <!-- ================================================= -->
+    <!-- NAPIS DOM                                         -->
+    <!-- umieszczony jeszcze w dachu, ale bez danych       -->
+    <!-- ================================================= -->
+    <!-- ================================================= -->
+    <!-- LINIA ODDZIELAJĄCA NAGŁÓWEK                       -->
+    <!-- ================================================= -->
+    <!-- ================================================= -->
+    <!-- FAZA L1                                           -->
+    <!-- ================================================= -->
+    <!-- ================================================= -->
+    <!-- SEPARATOR L1 / L2                                 -->
+    <!-- ================================================= -->
+    <!-- ================================================= -->
+    <!-- FAZA L2                                           -->
+    <!-- ================================================= -->
+    <!-- ================================================= -->
+    <!-- SEPARATOR L2 / L3                                 -->
+    <!-- ================================================= -->
+    <!-- ================================================= -->
+    <!-- FAZA L3                                           -->
+    <!-- ================================================= -->
+    <!-- ================================================= -->
+    <!-- LINIA PRZED SUMĄ                                  -->
+    <!-- ================================================= -->
+    <g
+       id="house-body"
+       transform="matrix(0.68080679,0,0,0.5817424,1410.8689,16.28456)"
+       style="display:inline"
+       sodipodi:insensitive="true">
+      <path
+         id="house-outline"
+         d="M 62,286 380,32 698,286 h -32 v 184 q 0,12 -12,12 H 106 Q 94,482 94,470 V 286 Z"
+         fill="none"
+         stroke="#a93b27"
+         stroke-width="9"
+         stroke-linejoin="round"
+         stroke-linecap="round"
+         filter="url(#houseGlow)" />
+      <path
+         id="roof-inner"
+         d="M 96,280 380,53 664,280"
+         fill="none"
+         stroke="#61271d"
+         stroke-width="1.5"
+         stroke-linejoin="round"
+         opacity="0.65" />
+      <path
+         id="roof-eave-left"
+         d="m 62,286 h 32 l 18,-15"
+         fill="none"
+         stroke="#a93b27"
+         stroke-width="9"
+         stroke-linecap="round"
+         stroke-linejoin="round" />
+      <path
+         id="roof-eave-right"
+         d="M 698,286 H 666 L 648,271"
+         fill="none"
+         stroke="#a93b27"
+         stroke-width="9"
+         stroke-linecap="round"
+         stroke-linejoin="round" />
+      <line
+         id="title-line"
+         x1="300"
+         y1="207"
+         x2="460"
+         y2="207"
+         stroke="#555a5f"
+         stroke-width="1.5"
+         opacity="0.8" />
+      <line
+         id="separator-l1"
+         x1="285"
+         y1="300"
+         x2="285"
+         y2="420"
+         stroke="#454a4e"
+         stroke-width="1.2" />
+      <line
+         id="separator-l2"
+         x1="475"
+         y1="300"
+         x2="475"
+         y2="420"
+         stroke="#454a4e"
+         stroke-width="1.2" />
+      <line
+         id="total-separator"
+         x1="148.26845"
+         y1="394.90637"
+         x2="618.26843"
+         y2="394.90637"
+         stroke="#454a4e"
+         stroke-width="1.2" />
+    </g>
+    <g
+       id="house-data"
+       transform="translate(1289.5755,-181.29476)">
+      <text
+         id="house-title"
+         x="380.9151"
+         y="294.38763"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="24px"
+         font-weight="600"
+         letter-spacing="4"
+         fill="#455268">DOM</text>
+      <g
+         id="phase-l1"
+         transform="translate(83.81037,14.964058)"
+         fill="#455268">
+        <text
+           x="180"
+           y="318"
+           text-anchor="middle"
+           font-family="Arial, Helvetica, sans-serif"
+           font-size="20px"
+           font-weight="600"
+           id="Phase-L1-label">L1</text>
+        <text
+           x="180"
+           y="341"
+           text-anchor="middle"
+           font-family="Arial, Helvetica, sans-serif"
+           font-size="20px"
+           letter-spacing="1.2"
+           id="home-current-l1-label">PRĄD</text>
+        <text
+           id="home-current-l1-data"
+           x="180"
+           y="364"
+           text-anchor="middle"
+           font-family="Arial, Helvetica, sans-serif"
+           font-size="20px"
+           font-weight="500">0.0 A</text>
+        <text
+           x="180"
+           y="388"
+           text-anchor="middle"
+           font-family="Arial, Helvetica, sans-serif"
+           font-size="20px"
+           letter-spacing="1.2"
+           id="home-power-l1-label">MOC</text>
+        <text
+           id="home-power-l1-data"
+           x="180"
+           y="412"
+           text-anchor="middle"
+           font-family="Arial, Helvetica, sans-serif"
+           font-size="20px"
+           font-weight="500">0.00 kW</text>
+      </g>
+      <g
+         id="phase-l2"
+         transform="translate(-0.9699397,14.719918)">
+        <text
+           x="380"
+           y="318"
+           text-anchor="middle"
+           font-family="Arial, Helvetica, sans-serif"
+           font-size="20px"
+           font-weight="600"
+           fill="#455268"
+           id="Phase-L2-label">L2</text>
+        <text
+           x="380"
+           y="341"
+           text-anchor="middle"
+           font-family="Arial, Helvetica, sans-serif"
+           font-size="20px"
+           letter-spacing="1.2"
+           fill="#455268"
+           id="home-current-l2-label">PRĄD</text>
+        <text
+           id="home-current-l2-data"
+           x="380"
+           y="364"
+           text-anchor="middle"
+           font-family="Arial, Helvetica, sans-serif"
+           font-size="20px"
+           font-weight="500"
+           fill="#455268">0.0 A</text>
+        <text
+           x="380"
+           y="388"
+           text-anchor="middle"
+           font-family="Arial, Helvetica, sans-serif"
+           font-size="20px"
+           letter-spacing="1.2"
+           fill="#455268"
+           id="home-power-l2-label">MOC</text>
+        <text
+           id="home-power-l2-data"
+           x="380"
+           y="412"
+           text-anchor="middle"
+           font-family="Arial, Helvetica, sans-serif"
+           font-size="20px"
+           font-weight="500"
+           fill="#455268">0.00 kW</text>
+      </g>
+      <g
+         id="phase-l3"
+         transform="translate(-74.240311,14.719918)">
+        <text
+           x="580"
+           y="318"
+           text-anchor="middle"
+           font-family="Arial, Helvetica, sans-serif"
+           font-size="20px"
+           font-weight="600"
+           fill="#455268"
+           id="Phase-L3-label">L3</text>
+        <text
+           x="580"
+           y="341"
+           text-anchor="middle"
+           font-family="Arial, Helvetica, sans-serif"
+           font-size="20px"
+           letter-spacing="1.2"
+           fill="#455268"
+           id="home-current-l3-label">PRĄD</text>
+        <text
+           id="home-current-l3-data"
+           x="580"
+           y="364"
+           text-anchor="middle"
+           font-family="Arial, Helvetica, sans-serif"
+           font-size="20px"
+           font-weight="500"
+           fill="#455268">0.0 A</text>
+        <text
+           x="580"
+           y="388"
+           text-anchor="middle"
+           font-family="Arial, Helvetica, sans-serif"
+           font-size="20px"
+           letter-spacing="1.2"
+           fill="#455268"
+           id="home-power-l3-label">MOC</text>
+        <text
+           id="home-power-l3-data"
+           x="580"
+           y="412"
+           text-anchor="middle"
+           font-family="Arial, Helvetica, sans-serif"
+           font-size="20px"
+           font-weight="500"
+           fill="#455268">0.00 kW</text>
+      </g>
+      <g
+         id="total-power"
+         transform="translate(0.5,-3.1383003)">
+        <text
+           x="380"
+           y="449"
+           text-anchor="middle"
+           font-family="Arial, Helvetica, sans-serif"
+           font-size="20px"
+           letter-spacing="1.8"
+           fill="#666d72"
+           id="#455268">POBÓR DOMU</text>
+        <text
+           id="total-power-data"
+           x="380"
+           y="474"
+           text-anchor="middle"
+           font-family="Arial, Helvetica, sans-serif"
+           font-size="20px"
+           font-weight="600"
+           fill="#455268">0.00 kW</text>
+      </g>
+    </g>
+    <!-- ================================================= -->
+    <!-- ŁĄCZNA MOC                                        -->
+    <!-- ================================================= -->
+  </g>
+  <metadata
+     id="metadata1">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>HA Dashboard PV</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>

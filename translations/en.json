@@ -1,0 +1,408 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "EnergyFlowDashboard",
+        "description": "Configure the EnergyFlowDashboard integration."
+      }
+    },
+    "abort": {
+      "single_instance_allowed": "Integration is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Entity mapping",
+        "description": "Assign Home Assistant entities to SVG fields."
+      }
+    }
+  },
+  "label": {
+    "inv1_pdc_label": "DC Power:",
+    "inv1_pac_label": "AC Power:",
+    "inv1_backup_mode_label": "Backup Mode:",
+    "inv2_pdc_label": "DC Power:",
+    "inv2_pac_label": "AC Power:",
+    "inv2_backup_mode_label": "Backup Mode:",
+    "storage_soc-label": "SOC:",
+    "storage_power-label": "Power:",
+    "storage_temp-label": "Temp.:",
+    "storage_current-label": "Current:",
+    "storage_voltage-label": "Voltage",
+    "sub1_voltage_label": "Voltage",
+    "sub1_current_label": "Current",
+    "sub1_power_label": "Total Power:",
+    "sub1_energy_label": "Today Production:",
+    "sub1_name_label": "Economic",
+    "boiler_power_supply_label": "Power source:",
+    "boiler_battery_soc_label": "Battery SOC:",
+    "boiler_name_label": "Boiler room",
+    "home_current_l1_label": "CURRENT",
+    "home_current_l2_label": "CURRENT",
+    "home_current_l3_label": "CURRENT",
+    "home_power_l1_label": "POWER",
+    "home_power_l2_label": "POWER",
+    "home_power_l3_label": "POWER",
+    "home_power_total_label": "HOME CONSUMPTION",
+    "phase_l1": "L1",
+    "phase_l2": "L2",
+    "phase_l3": "L3",
+    "phase_n": "N",
+    "hp_power_label": "Power",
+    "hp_current_label": "CURRENT",
+    "hp_power_total_label": "Total power",
+    "grid_voltage_label": "VOLTAGE",
+    "grid_current_label": "CURRENT",
+    "meter_power_label": "METER POWER",
+    "meter_energy_label": "PRODUCED"
+  },
+  "device": {
+    "device_inverter_1": "Inverter 1 (Fronius)",
+    "device_inverter_2": "Inverter 2 (SMA)",
+    "device_battery": "Battery",
+    "device_heat_pump": "Heat pump",
+    "device_subboard_1": "Sub-board 1 (economic)",
+    "device_subboard_2": "Sub-board 2 (boiler)",
+    "device_home": "Home",
+    "device_grid": "Grid / DSO"
+  },
+  "device_desc": {
+    "device_inverter_1": "Main inverter – usually always active.",
+    "device_inverter_2": "Second inverter (if present).",
+    "device_battery": "Energy storage.",
+    "device_heat_pump": "Heat pump.",
+    "device_subboard_1": "Sub-board feeding the economic part.",
+    "device_subboard_2": "Boiler sub-board.",
+    "device_home": "Home energy balance.",
+    "device_grid": "Grid connection point."
+  },
+  "config_subentries": {
+    "device": {
+      "step": {
+        "user": {
+          "title": "Choose device",
+          "description": "Choose a device you want to add or configure."
+        },
+        "configure": {
+          "title": "Device configuration",
+          "description": "Fill in fields for this device.",
+          "sections": {
+            "name": {
+              "name": "Device name",
+              "data": {
+                "inv1_name": "Inverter 1 name",
+                "inv2_name": "Inverter 2 name",
+                "EnergyStorageName": "Storage name",
+                "AC_SubBoard1_label": "Sub-board name",
+                "AC_SubBoard2_label": "Sub-board name",
+                "AC_subboard1_Voltage_label": "Data label 1 - default Voltage",
+                "AC_subboard1_Current-label":"Data label 2 - default Current"
+              }
+            },
+            "animation": {
+              "name": "Animation",
+              "data": {
+                "heat_pump_fan_enabled": "Fan animation",
+                "HeatPump-fan1-speed-data": "Fan 1 — speed",
+                "HeatPump-fan2-speed-data": "Fan 2 — speed",
+                "inv1_fan_enabled": "Fan animation",
+                "inv1_status_message-data": "Inverter status (running)",
+                "inv2_status-data": "Inverter 2 status (Ok)"
+              }
+            },
+            "mppt_conf": {
+              "name": "MPPT count",
+              "data": {
+                "inv1_mppt_count": "MPPT count",
+                "inv2_mppt_count": "MPPT count"
+              }
+            },
+            "mppt_name": {
+              "name": "String names (MPPT)",
+              "data": {
+                "inv1_mppt1_name": "MPPT 1 name",
+                "inv1_mppt2_name": "MPPT 2 name",
+                "inv1_mppt3_name": "MPPT 3 name",
+                "inv2_mppt1_name": "MPPT 1 name",
+                "inv2_mppt2_name": "MPPT 2 name",
+                "inv2_mppt3_name": "MPPT 3 name"
+              }
+            },
+            "visibility": {
+              "name": "What to show on diagram",
+              "data": {
+                "inv1_name_visible": "Show inverter name",
+                "inv1_mppt_labels_visible": "Show MPPT labels",
+                "inv2_mppt_labels_visible": "Show MPPT labels",
+                "battery_name_visible": "Show storage name",
+                "battery_SOC-label_visible": "Show SOC label",
+                "battery_Temp-label_visible": "Show Temp. label",
+                "battery_Voltage-label_visible": "Show Voltage label",
+                "battery_Current-label_visible": "Show Current label",
+                "battery_Power-label_visible": "Show Power label",
+                "heat_pump_labels_visible": "Show labels",
+                "subboard_1_name_visible": "Show name",
+                "subboard_1_voltage_labels_visible": "Show voltage label",
+                "subboard_1_current_labels_visible": "Show current label",
+                "subboard_1_power_label_visible": "Show power label",
+                "subboard_1_energy_label_visible": "Show energy label",
+                "subboard_2_name_visible": "Show name",
+                "subboard_2_power_supply_label_visible": "Show power source label",
+                "subboard_2_battery_label_visible": "Show battery label",
+                "home_phase_labels_visible": "Show phase labels",
+                "home_current_labels_visible": "Show current labels",
+                "home_power_labels_visible": "Show power labels",
+                "grid_phase_labels_visible": "Show phase labels",
+                "grid_voltage_labels_visible": "Show voltage labels",
+                "grid_current_labels_visible": "Show current labels",
+                "grid_meter_labels_visible": "Show meter labels"
+              }
+            },
+            "backup": {
+              "name": "Full backup mode",
+              "data": {
+                "inv1_backup_enabled": "Full backup mode"
+              }
+            },
+            "data": {
+              "name": "Measurement entities",
+              "data": {
+                "inv1_pdc-data": "Pdc (DC power)",
+                "inv1_pac-data": "Pac (AC power)",
+                "inv1_Backup_Mode-data": "Backup Mode",
+                "inv1_mppt1_vdc": "MPPT1 – voltage",
+                "inv1_mppt1_adc": "MPPT1 – current",
+                "inv1_mppt1_pdc": "MPPT1 – power",
+                "inv1_mppt2_vdc": "MPPT2 – voltage",
+                "inv1_mppt2_adc": "MPPT2 – current",
+                "inv1_mppt2_pdc": "MPPT2 – power",
+                "inv1_mppt3_vdc": "MPPT3 – voltage",
+                "inv1_mppt3_adc": "MPPT3 – current",
+                "inv1_mppt3_pdc": "MPPT3 – power",
+                "inv2_pdc-data": "Pdc (DC power)",
+                "inv2_pac-data": "Pac (AC power)",
+                "inv2_Backup_Mode-data": "Backup Mode",
+                "inv2_mppt1_vdc": "MPPT1 – voltage",
+                "inv2_mppt1_adc": "MPPT1 – current",
+                "inv2_mppt1_pdc": "MPPT1 – power",
+                "inv2_mppt2_vdc": "MPPT2 – voltage",
+                "inv2_mppt2_adc": "MPPT2 – current",
+                "inv2_mppt2_pdc": "MPPT2 – power",
+                "inv2_mppt3_vdc": "MPPT3 – voltage",
+                "inv2_mppt3_adc": "MPPT3 – current",
+                "inv2_mppt3_pdc": "MPPT3 – power",
+                "EnergyStorageCapacity": "Capacity",
+                "EnergyStorageSOC-data": "SOC (state of charge)",
+                "EnergyStoragePower-data": "Power",
+                "EnergyStorageStateChargeDischarge": "State (charge/discharge)",
+                "EnergyStorageTemp-data": "Battery temperature",
+                "Battery_Current-data": "Battery current",
+                "Battery_Vdc-data": "Battery Voltage",
+                "HeatPump-current-L1-data": "Current L1",
+                "HeatPump-current-L2-data": "Current L2",
+                "HeatPump-current-L3-data": "Current L3",
+                "HeatPump-power-L1-data": "Power L1",
+                "HeatPump-power-L2-data": "Power L2",
+                "HeatPump-power-L3-data": "Power L3",
+                "HeatPump-power-total-data": "Total power",
+                "AC_subboard1_VAC_L1": "Voltage L1",
+                "AC_subboard1_VAC_L2": "Voltage L2",
+                "AC_subboard1_VAC_L3": "Voltage L3",
+                "AC_subboard1_Curr_L1": "Current L1",
+                "AC_subboard1_Curr_L2": "Current L2",
+                "AC_subboard1_Curr_L3": "Current L3",
+                "AC_subboard1_Power_Total_data": "Total power",
+                "AC_subboard1_Energy_Produced-data": "Energy today",
+                "AC_SubBoard2_battery_SOC-data": "Battery SOC",
+                "home-current-l1-data": "Current L1",
+                "home-current-l2-data": "Current L2",
+                "home-current-l3-data": "Current L3",
+                "home-power-l1-data": "Power L1",
+                "home-power-l2-data": "Power L2",
+                "home-power-l3-data": "Power L3",
+                "total-power-data": "Total power",
+                "grid-voltage-l1-data": "Voltage L1",
+                "grid-voltage-l2-data": "Voltage L2",
+                "grid-voltage-l3-data": "Voltage L3",
+                "grid-current-l1-data": "Current L1",
+                "grid-current-l2-data": "Current L2",
+                "grid-current-l3-data": "Current L3",
+                "meter-power-data": "Meter power",
+                "meter-power-produced_day-data": "Energy today",
+                "full_backup_state": "Contact (visualization)"
+              }
+            },
+            "texts": {
+              "name": "Texts",
+              "data": {
+                "AC_SubBoard2_power_supply": "Power source (text)",
+                "AC_SubBoard2_power_supply-grid": "GRID (text)",
+                "AC_SubBoard2_power_supply-backup": "Backup (text)"
+              }
+            }
+          }
+        },
+        "reconfigure": {
+          "title": "Reconfigure device",
+          "description": "Fill in fields for this device.",
+          "sections": {
+            "name": {
+              "name": "Device name",
+              "data": {
+                "inv1_name": "Inverter 1 name",
+                "inv2_name": "Inverter 2 name",
+                "EnergyStorageName": "Storage name",
+                "AC_SubBoard1_label": "Sub-board name",
+                "AC_SubBoard2_label": "Sub-board name",
+                "AC_subboard1_Voltage_label": "Data label 1 - default Voltage",
+                "AC_subboard1_Current-label":"Data label 2 - default Current"
+              }
+            },
+            "animation": {
+              "name": "Animation",
+              "data": {
+                "heat_pump_fan_enabled": "Fan animation",
+                "HeatPump-fan1-speed-data": "Fan 1 — speed",
+                "HeatPump-fan2-speed-data": "Fan 2 — speed",
+                "inv1_fan_enabled": "Fan animation",
+                "inv1_status_message-data": "Inverter status (running)",
+                "inv2_status-data": "Inverter 2 status (Ok)"
+              }
+            },
+            "mppt_conf": {
+              "name": "MPPT count",
+              "data": {
+                "inv1_mppt_count": "MPPT count",
+                "inv2_mppt_count": "MPPT count"
+              }
+            },
+            "mppt_name": {
+              "name": "String names (MPPT)",
+              "data": {
+                "inv1_mppt1_name": "MPPT 1 name",
+                "inv1_mppt2_name": "MPPT 2 name",
+                "inv1_mppt3_name": "MPPT 3 name",
+                "inv2_mppt1_name": "MPPT 1 name",
+                "inv2_mppt2_name": "MPPT 2 name",
+                "inv2_mppt3_name": "MPPT 3 name"
+              }
+            },
+            "visibility": {
+              "name": "What to show on diagram",
+              "data": {
+                "inv1_name_visible": "Show inverter name",
+                "inv1_mppt_labels_visible": "Show MPPT labels",
+                "inv2_mppt_labels_visible": "Show MPPT labels",
+                "battery_name_visible": "Show storage name",
+                "battery_SOC-label_visible": "Show SOC label",
+                "battery_Temp-label_visible": "Show Temp. label",
+                "battery_Voltage-label_visible": "Show Voltage label",
+                "battery_Current-label_visible": "Show Current label",
+                "battery_Power-label_visible": "Show Power label",
+                "heat_pump_labels_visible": "Show labels",
+                "subboard_1_name_visible": "Show name",
+                "subboard_1_voltage_labels_visible": "Show voltage label",
+                "subboard_1_current_labels_visible": "Show current label",
+                "subboard_1_power_label_visible": "Show power label",
+                "subboard_1_energy_label_visible": "Show energy label",
+                "subboard_2_name_visible": "Show name",
+                "subboard_2_power_supply_label_visible": "Show power source label",
+                "subboard_2_battery_label_visible": "Show battery label",
+                "home_phase_labels_visible": "Show phase labels",
+                "home_current_labels_visible": "Show current labels",
+                "home_power_labels_visible": "Show power labels",
+                "grid_phase_labels_visible": "Show phase labels",
+                "grid_voltage_labels_visible": "Show voltage labels",
+                "grid_current_labels_visible": "Show current labels",
+                "grid_meter_labels_visible": "Show meter labels"
+              }
+            },
+            "backup": {
+              "name": "Full backup mode",
+              "data": {
+                "inv1_backup_enabled": "Full backup mode"
+              }
+            },
+            "data": {
+              "name": "Measurement entities",
+              "data": {
+                "inv1_pdc-data": "Pdc (DC power)",
+                "inv1_pac-data": "Pac (AC power)",
+                "inv1_Backup_Mode-data": "Backup Mode",
+                "inv1_mppt1_vdc": "MPPT1 – voltage",
+                "inv1_mppt1_adc": "MPPT1 – current",
+                "inv1_mppt1_pdc": "MPPT1 – power",
+                "inv1_mppt2_vdc": "MPPT2 – voltage",
+                "inv1_mppt2_adc": "MPPT2 – current",
+                "inv1_mppt2_pdc": "MPPT2 – power",
+                "inv1_mppt3_vdc": "MPPT3 – voltage",
+                "inv1_mppt3_adc": "MPPT3 – current",
+                "inv1_mppt3_pdc": "MPPT3 – power",
+                "inv2_pdc-data": "Pdc (DC power)",
+                "inv2_pac-data": "Pac (AC power)",
+                "inv2_Backup_Mode-data": "Backup Mode",
+                "inv2_mppt1_vdc": "MPPT1 – voltage",
+                "inv2_mppt1_adc": "MPPT1 – current",
+                "inv2_mppt1_pdc": "MPPT1 – power",
+                "inv2_mppt2_vdc": "MPPT2 – voltage",
+                "inv2_mppt2_adc": "MPPT2 – current",
+                "inv2_mppt2_pdc": "MPPT2 – power",
+                "inv2_mppt3_vdc": "MPPT3 – voltage",
+                "inv2_mppt3_adc": "MPPT3 – current",
+                "inv2_mppt3_pdc": "MPPT3 – power",
+                "EnergyStorageCapacity": "Capacity",
+                "EnergyStorageSOC-data": "SOC (state of charge)",
+                "EnergyStoragePower-data": "Power",
+                "EnergyStorageStateChargeDischarge": "State (charge/discharge)",
+                "EnergyStorageTemp-data": "Battery temperature",
+                "Battery_Current-data": "Battery current",
+                "Battery_Vdc-data": "Battery Voltage",
+                "HeatPump-current-L1-data": "Current L1",
+                "HeatPump-current-L2-data": "Current L2",
+                "HeatPump-current-L3-data": "Current L3",
+                "HeatPump-power-L1-data": "Power L1",
+                "HeatPump-power-L2-data": "Power L2",
+                "HeatPump-power-L3-data": "Power L3",
+                "HeatPump-power-total-data": "Total power",
+                "AC_subboard1_VAC_L1": "Voltage L1",
+                "AC_subboard1_VAC_L2": "Voltage L2",
+                "AC_subboard1_VAC_L3": "Voltage L3",
+                "AC_subboard1_Curr_L1": "Current L1",
+                "AC_subboard1_Curr_L2": "Current L2",
+                "AC_subboard1_Curr_L3": "Current L3",
+                "AC_subboard1_Power_Total_data": "Total power",
+                "AC_subboard1_Energy_Produced-data": "Energy today",
+                "AC_SubBoard2_battery_SOC-data": "Battery SOC",
+                "home-current-l1-data": "Current L1",
+                "home-current-l2-data": "Current L2",
+                "home-current-l3-data": "Current L3",
+                "home-power-l1-data": "Power L1",
+                "home-power-l2-data": "Power L2",
+                "home-power-l3-data": "Power L3",
+                "total-power-data": "Total power",
+                "grid-voltage-l1-data": "Voltage L1",
+                "grid-voltage-l2-data": "Voltage L2",
+                "grid-voltage-l3-data": "Voltage L3",
+                "grid-current-l1-data": "Current L1",
+                "grid-current-l2-data": "Current L2",
+                "grid-current-l3-data": "Current L3",
+                "meter-power-data": "Meter power",
+                "meter-power-produced_day-data": "Energy today",
+                "full_backup_state": "Contact (visualization)"
+              }
+            },
+            "texts": {
+              "name": "Texts",
+              "data": {
+                "AC_SubBoard2_power_supply": "Power source (text)",
+                "AC_SubBoard2_power_supply-grid": "GRID (text)",
+                "AC_SubBoard2_power_supply-backup": "Backup (text)"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

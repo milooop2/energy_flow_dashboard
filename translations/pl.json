@@ -1,0 +1,411 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "EnergyFlowDashboard",
+        "description": "Skonfiguruj integrację EnergyFlowDashboard."
+      }
+    },
+    "abort": {
+      "single_instance_allowed": "Integracja jest już skonfigurowana."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Mapowanie encji",
+        "description": "Przypisz encje Home Assistant do pól w SVG."
+      }
+    }
+  },
+  "label": {
+    "inv1_pdc_label": "Moc DC:",
+    "inv1_pac_label": "Moc AC:",
+    "inv1_backup_mode_label": "Tryb Backup:",
+    "inv2_pdc_label": "Moc DC:",
+    "inv2_pac_label": "Moc AC:",
+    "inv2_backup_mode_label": "Tryb Backup:",
+    "storage_soc-label": "SOC:",
+    "storage_power-label": "Moc:",
+    "storage_temp-label": "Temp.:",
+    "storage_current-label": "Prąd:",
+    "storage_voltage-label": "Napięcie",
+    "sub1_voltage_label": "Napięcie",
+    "sub1_current_label": "Prąd",
+    "sub1_power_label": "Moc całkowita:",
+    "sub1_energy_label": "Produkcja dziś:",
+    "sub1_name_label": "Gospodarczy",
+    "boiler_power_supply_label": "Rodzaj zasilania:",
+    "boiler_battery_soc_label": "Bateria SOC:",
+    "boiler_name_label": "Kotłownia",
+    "home_current_l1_label": "PRĄD",
+    "home_current_l2_label": "PRĄD",
+    "home_current_l3_label": "PRĄD",
+    "home_power_l1_label": "MOC",
+    "home_power_l2_label": "MOC",
+    "home_power_l3_label": "MOC",
+    "home_power_total_label": "POBÓR DOMU",
+    "phase_l1": "L1",
+    "phase_l2": "L2",
+    "phase_l3": "L3",
+    "phase_n": "N",
+    "hp_power_label": "Moc",
+    "hp_current_label": "PRĄD",
+    "hp_power_total_label": "Moc całkowita",
+    "grid_voltage_label": "NAPIĘCIE",
+    "grid_current_label": "PRĄD",
+    "meter_power_label": "MOC LICZNIKA",
+    "meter_energy_label": "WYPRODUKOWANO"
+  },
+  "device": {
+    "device_inverter_1": "Falownik 1 (Fronius)",
+    "device_inverter_2": "Falownik 2 (SMA)",
+    "device_battery": "Bateria",
+    "device_heat_pump": "Pompa ciepła",
+    "device_subboard_1": "Rozdzielnica 1 (gospodarcza)",
+    "device_subboard_2": "Rozdzielnica 2 (kotłownia)",
+    "device_home": "Dom",
+    "device_grid": "Sieć / OSD"
+  },
+  "device_desc": {
+    "device_inverter_1": "Główny falownik – zwykle zawsze aktywny.",
+    "device_inverter_2": "Drugi falownik (jeśli istnieje).",
+    "device_battery": "Magazyn energii.",
+    "device_heat_pump": "Pompa ciepła.",
+    "device_subboard_1": "Rozdzielnica zasilająca część gospodarczą.",
+    "device_subboard_2": "Rozdzielnica kotłowni.",
+    "device_home": "Bilans energetyczny domu.",
+    "device_grid": "Punkt przyłączenia do sieci OSD."
+  },
+  "config_subentries": {
+    "device": {
+      "step": {
+        "user": {
+          "title": "Wybierz urządzenie",
+          "description": "Wybierz urządzenie, które chcesz dodać lub skonfigurować."
+        },
+        "configure": {
+          "title": "Konfiguracja urządzenia",
+          "description": "Wypełnij pola dla tego urządzenia.",
+          "sections": {
+            "name": {
+              "name": "Nazwa urządzenia",
+              "data": {
+                "inv1_name": "Nazwa inwertera 1",
+                "inv2_name": "Nazwa inwertera 2",
+                "EnergyStorageName": "Nazwa magazynu",
+                "AC_SubBoard1_label": "Nazwa rozdzielnicy",
+                "AC_SubBoard2_label": "Nazwa rozdzielnicy",
+                "AC_subboard1_Voltage_label":"Etykieta danych 1 - domyslnie napiecie",
+                "AC_subboard1_Current-label":"Etykieta danych 2 - domyslnie prad"                
+              }
+            },
+            "animation": {
+              "name": "Animacja",
+              "data": {
+                "heat_pump_fan_enabled": "Animacja wentylatorów",
+                "HeatPump-fan1-speed-data": "Wentylator 1 — prędkość",
+                "HeatPump-fan2-speed-data": "Wentylator 2 — prędkość",
+                "inv1_fan_enabled": "Animacja wentylatora",
+                "inv1_status_message-data": "Status falownika (running)",
+                "inv2_status-data": "Status falownika 2 (Ok)"
+              }
+            },
+            "mppt_conf": {
+              "name": "Liczba MPPT",
+              "data": {
+                "inv1_mppt_count": "Liczba MPPT",
+                "inv2_mppt_count": "Liczba MPPT"
+              }
+            },
+            "mppt_name": {
+              "name": "Nazwy stringów (MPPT)",
+              "data": {
+                "inv1_mppt1_name": "Nazwa MPPT 1",
+                "inv1_mppt2_name": "Nazwa MPPT 2",
+                "inv1_mppt3_name": "Nazwa MPPT 3",
+                "inv2_mppt1_name": "Nazwa MPPT 1",
+                "inv2_mppt2_name": "Nazwa MPPT 2",
+                "inv2_mppt3_name": "Nazwa MPPT 3"
+              }
+            },
+            "visibility": {
+              "name": "Co pokazać na diagramie",
+              "data": {
+                "inv1_name_visible": "Pokaż nazwę inwertera",
+                "inv1_mppt_labels_visible": "Pokaż etykiety MPPT",
+                "inv2_mppt_labels_visible": "Pokaż etykiety MPPT",
+                "battery_name_visible": "Pokaż nazwę magazynu",
+                "battery_SOC-label_visible": "Pokaż etykietę SOC",
+                "battery_Temp-label_visible": "Pokaż etykietę Temperatury",
+                "battery_Voltage-label_visible": "Pokaż etykietę Napięcie",
+                "battery_Current-label_visible": "Pokaż etykietę Prąd",
+                "battery_Power-label_visible": "Pokaż etykietę Moc",
+                "heat_pump_labels_visible": "Pokaż etykiety",
+                "subboard_1_name_visible": "Pokaż nazwę",
+                "subboard_1_voltage_labels_visible": "Pokaż etykietę napięcia",
+                "subboard_1_current_labels_visible": "Pokaż etykietę prądu",
+                "subboard_1_power_label_visible": "Pokaż etykietę mocy",
+                "subboard_1_energy_label_visible": "Pokaż etykietę energii",
+                "subboard_2_name_visible": "Pokaż nazwę",
+                "subboard_2_power_supply_label_visible": "Pokaż etykietę zasilania",
+                "subboard_2_battery_label_visible": "Pokaż etykietę baterii",
+                "home_phase_labels_visible": "Pokaż etykiety faz",
+                "home_current_labels_visible": "Pokaż etykiety prądu",
+                "home_power_labels_visible": "Pokaż etykiety mocy",
+                "grid_phase_labels_visible": "Pokaż etykiety faz",
+                "grid_voltage_labels_visible": "Pokaż etykiety napięcia",
+                "grid_current_labels_visible": "Pokaż etykiety prądu",
+                "grid_meter_labels_visible": "Pokaż etykiety licznika"
+              }
+            },
+            "backup": {
+              "name": "Tryb full backup",
+              "data": {
+                "inv1_backup_enabled": "Tryb full backup"
+              }
+            },
+            "data": {
+              "name": "Encje pomiarowe",
+              "data": {
+                "inv1_pdc-data": "Pdc (moc DC)",
+                "inv1_pac-data": "Pac (moc AC)",
+                "inv1_Backup_Mode-data": "Tryb Backup",
+                "inv1_mppt1_vdc": "MPPT1 – napięcie",
+                "inv1_mppt1_adc": "MPPT1 – prąd",
+                "inv1_mppt1_pdc": "MPPT1 – moc",
+                "inv1_mppt2_vdc": "MPPT2 – napięcie",
+                "inv1_mppt2_adc": "MPPT2 – prąd",
+                "inv1_mppt2_pdc": "MPPT2 – moc",
+                "inv1_mppt3_vdc": "MPPT3 – napięcie",
+                "inv1_mppt3_adc": "MPPT3 – prąd",
+                "inv1_mppt3_pdc": "MPPT3 – moc",
+                "inv2_pdc-data": "Pdc (moc DC)",
+                "inv2_pac-data": "Pac (moc AC)",
+                "inv2_Backup_Mode-data": "Tryb Backup",
+                "inv2_mppt1_vdc": "MPPT1 – napięcie",
+                "inv2_mppt1_adc": "MPPT1 – prąd",
+                "inv2_mppt1_pdc": "MPPT1 – moc",
+                "inv2_mppt2_vdc": "MPPT2 – napięcie",
+                "inv2_mppt2_adc": "MPPT2 – prąd",
+                "inv2_mppt2_pdc": "MPPT2 – moc",
+                "inv2_mppt3_vdc": "MPPT3 – napięcie",
+                "inv2_mppt3_adc": "MPPT3 – prąd",
+                "inv2_mppt3_pdc": "MPPT3 – moc",
+                "EnergyStorageCapacity": "Pojemność",
+                "EnergyStorageSOC-data": "SOC (stan naładowania)",
+                "EnergyStoragePower-data": "Moc",
+                "EnergyStorageTemp-data": "Temperatura Baterii",
+                "Battery_Current-data": "Przepływ prądu Baterii",
+                "Battery_Vdc-data": "Przepływ napięcia Baterii",
+                "EnergyStorageStateChargeDischarge": "Stan (ładowanie/rozładowanie)",
+                "HeatPump-current-L1-data": "Prąd L1",
+                "HeatPump-current-L2-data": "Prąd L2",
+                "HeatPump-current-L3-data": "Prąd L3",
+                "HeatPump-power-L1-data": "Moc L1",
+                "HeatPump-power-L2-data": "Moc L2",
+                "HeatPump-power-L3-data": "Moc L3",
+                "HeatPump-power-total-data": "Moc całkowita",
+                "AC_subboard1_VAC_L1": "Napięcie L1",
+                "AC_subboard1_VAC_L2": "Napięcie L2",
+                "AC_subboard1_VAC_L3": "Napięcie L3",
+                "AC_subboard1_Curr_L1": "Prąd L1",
+                "AC_subboard1_Curr_L2": "Prąd L2",
+                "AC_subboard1_Curr_L3": "Prąd L3",
+                "AC_subboard1_Power_Total_data": "Moc całkowita",
+                "AC_subboard1_Energy_Produced-data": "Energia dziś",
+                "AC_SubBoard2_battery_SOC-data": "Bateria SOC",
+                "home-current-l1-data": "Prąd L1",
+                "home-current-l2-data": "Prąd L2",
+                "home-current-l3-data": "Prąd L3",
+                "home-power-l1-data": "Moc L1",
+                "home-power-l2-data": "Moc L2",
+                "home-power-l3-data": "Moc L3",
+                "total-power-data": "Moc łączna",
+                "grid-voltage-l1-data": "Napięcie L1",
+                "grid-voltage-l2-data": "Napięcie L2",
+                "grid-voltage-l3-data": "Napięcie L3",
+                "grid-current-l1-data": "Prąd L1",
+                "grid-current-l2-data": "Prąd L2",
+                "grid-current-l3-data": "Prąd L3",
+                "meter-power-data": "Moc licznika",
+                "meter-power-produced_day-data": "Energia dziś",
+                "full_backup_state": "Stycznik (wizualizacja)",
+                "heat_pump_fan_enabled": "Animacja wentylatorów",
+                "HeatPump-fan1-speed-data": "Wentylator 1 — prędkość",
+                "HeatPump-fan2-speed-data": "Wentylator 2 — prędkość"
+              }
+            },
+            "texts": {
+              "name": "Teksty",
+              "data": {
+                "AC_SubBoard2_power_supply": "Rodzaj zasilania (tekst)",
+                "AC_SubBoard2_power_supply-grid": "GRID (tekst)",
+                "AC_SubBoard2_power_supply-backup": "Backup (tekst)"
+              }
+            }
+          }
+        },
+        "reconfigure": {
+          "title": "Rekonfiguracja urządzenia",
+          "description": "Wypełnij pola dla tego urządzenia.",
+          "sections": {
+            "name": {
+              "name": "Nazwa urządzenia",
+              "data": {
+                "inv1_name": "Nazwa inwertera 1",
+                "inv2_name": "Nazwa inwertera 2",
+                "EnergyStorageName": "Nazwa magazynu",
+                "AC_SubBoard1_label": "Nazwa rozdzielnicy",
+                "AC_SubBoard2_label": "Nazwa rozdzielnicy",
+                "AC_subboard1_Voltage_label":"Etykieta danych 1 - domyslnie napiecie",
+                "AC_subboard1_Current-label":"Etykieta danych 2 - domyslnie prad"
+              }
+            },
+            "animation": {
+              "name": "Animacja",
+              "data": {
+                "heat_pump_fan_enabled": "Animacja wentylatorów",
+                "HeatPump-fan1-speed-data": "Wentylator 1 — prędkość",
+                "HeatPump-fan2-speed-data": "Wentylator 2 — prędkość",
+                "inv1_fan_enabled": "Animacja wentylatora",
+                "inv1_status_message-data": "Status falownika (running)",
+                "inv2_status-data": "Status falownika 2 (Ok)"
+              }
+            },
+            "mppt_conf": {
+              "name": "Liczba MPPT",
+              "data": {
+                "inv1_mppt_count": "Liczba MPPT",
+                "inv2_mppt_count": "Liczba MPPT"
+              }
+            },
+            "mppt_name": {
+              "name": "Nazwy stringów (MPPT)",
+              "data": {
+                "inv1_mppt1_name": "Nazwa MPPT 1",
+                "inv1_mppt2_name": "Nazwa MPPT 2",
+                "inv1_mppt3_name": "Nazwa MPPT 3",
+                "inv2_mppt1_name": "Nazwa MPPT 1",
+                "inv2_mppt2_name": "Nazwa MPPT 2",
+                "inv2_mppt3_name": "Nazwa MPPT 3"
+              }
+            },
+            "visibility": {
+              "name": "Co pokazać na diagramie",
+              "data": {
+                "inv1_name_visible": "Pokaż nazwę inwertera",
+                "inv1_mppt_labels_visible": "Pokaż etykiety MPPT",
+                "inv2_mppt_labels_visible": "Pokaż etykiety MPPT",
+                "battery_name_visible": "Pokaż nazwę magazynu",
+                "battery_SOC-label_visible": "Pokaż etykietę SOC",
+                "battery_Temp-label_visible": "Pokaż etykietę Temperatury",
+                "battery_Voltage-label_visible": "Pokaż etykietę Napięcie",
+                "battery_Current-label_visible": "Pokaż etykietę Prąd",
+                "battery_Power-label_visible": "Pokaż etykietę Moc",
+                "heat_pump_labels_visible": "Pokaż etykiety",
+                "subboard_1_name_visible": "Pokaż nazwę",
+                "subboard_1_voltage_labels_visible": "Pokaż etykietę napięcia",
+                "subboard_1_current_labels_visible": "Pokaż etykietę prądu",
+                "subboard_1_power_label_visible": "Pokaż etykietę mocy",
+                "subboard_1_energy_label_visible": "Pokaż etykietę energii",
+                "subboard_2_name_visible": "Pokaż nazwę",
+                "subboard_2_power_supply_label_visible": "Pokaż etykietę zasilania",
+                "subboard_2_battery_label_visible": "Pokaż etykietę baterii",
+                "home_phase_labels_visible": "Pokaż etykiety faz",
+                "home_current_labels_visible": "Pokaż etykiety prądu",
+                "home_power_labels_visible": "Pokaż etykiety mocy",
+                "grid_phase_labels_visible": "Pokaż etykiety faz",
+                "grid_voltage_labels_visible": "Pokaż etykiety napięcia",
+                "grid_current_labels_visible": "Pokaż etykiety prądu",
+                "grid_meter_labels_visible": "Pokaż etykiety licznika"
+              }
+            },
+            "backup": {
+              "name": "Tryb full backup",
+              "data": {
+                "inv1_backup_enabled": "Tryb full backup"
+              }
+            },
+            "data": {
+              "name": "Encje pomiarowe",
+              "data": {
+                "inv1_pdc-data": "Pdc (moc DC)",
+                "inv1_pac-data": "Pac (moc AC)",
+                "inv1_Backup_Mode-data": "Tryb Backup",
+                "inv1_mppt1_vdc": "MPPT1 – napięcie",
+                "inv1_mppt1_adc": "MPPT1 – prąd",
+                "inv1_mppt1_pdc": "MPPT1 – moc",
+                "inv1_mppt2_vdc": "MPPT2 – napięcie",
+                "inv1_mppt2_adc": "MPPT2 – prąd",
+                "inv1_mppt2_pdc": "MPPT2 – moc",
+                "inv1_mppt3_vdc": "MPPT3 – napięcie",
+                "inv1_mppt3_adc": "MPPT3 – prąd",
+                "inv1_mppt3_pdc": "MPPT3 – moc",
+                "inv2_pdc-data": "Pdc (moc DC)",
+                "inv2_pac-data": "Pac (moc AC)",
+                "inv2_Backup_Mode-data": "Tryb Backup",
+                "inv2_mppt1_vdc": "MPPT1 – napięcie",
+                "inv2_mppt1_adc": "MPPT1 – prąd",
+                "inv2_mppt1_pdc": "MPPT1 – moc",
+                "inv2_mppt2_vdc": "MPPT2 – napięcie",
+                "inv2_mppt2_adc": "MPPT2 – prąd",
+                "inv2_mppt2_pdc": "MPPT2 – moc",
+                "inv2_mppt3_vdc": "MPPT3 – napięcie",
+                "inv2_mppt3_adc": "MPPT3 – prąd",
+                "inv2_mppt3_pdc": "MPPT3 – moc",
+                "EnergyStorageCapacity": "Pojemność",
+                "EnergyStorageSOC-data": "SOC (stan naładowania)",
+                "EnergyStoragePower-data": "Moc",
+                "EnergyStorageTemp-data": "Temperatura Baterii",
+                "Battery_Current-data": "Przepływ prądu Baterii",
+                "Battery_Vdc-data": "Przepływ napięcia Baterii",
+                "EnergyStorageStateChargeDischarge": "Stan (ładowanie/rozładowanie)",
+                "HeatPump-current-L1-data": "Prąd L1",
+                "HeatPump-current-L2-data": "Prąd L2",
+                "HeatPump-current-L3-data": "Prąd L3",
+                "HeatPump-power-L1-data": "Moc L1",
+                "HeatPump-power-L2-data": "Moc L2",
+                "HeatPump-power-L3-data": "Moc L3",
+                "HeatPump-power-total-data": "Moc całkowita",
+                "AC_subboard1_VAC_L1": "Napięcie L1",
+                "AC_subboard1_VAC_L2": "Napięcie L2",
+                "AC_subboard1_VAC_L3": "Napięcie L3",
+                "AC_subboard1_Curr_L1": "Prąd L1",
+                "AC_subboard1_Curr_L2": "Prąd L2",
+                "AC_subboard1_Curr_L3": "Prąd L3",
+                "AC_subboard1_Power_Total_data": "Moc całkowita",
+                "AC_subboard1_Energy_Produced-data": "Energia dziś",
+                "AC_SubBoard2_battery_SOC-data": "Bateria SOC",
+                "home-current-l1-data": "Prąd L1",
+                "home-current-l2-data": "Prąd L2",
+                "home-current-l3-data": "Prąd L3",
+                "home-power-l1-data": "Moc L1",
+                "home-power-l2-data": "Moc L2",
+                "home-power-l3-data": "Moc L3",
+                "total-power-data": "Moc łączna",
+                "grid-voltage-l1-data": "Napięcie L1",
+                "grid-voltage-l2-data": "Napięcie L2",
+                "grid-voltage-l3-data": "Napięcie L3",
+                "grid-current-l1-data": "Prąd L1",
+                "grid-current-l2-data": "Prąd L2",
+                "grid-current-l3-data": "Prąd L3",
+                "meter-power-data": "Moc licznika",
+                "meter-power-produced_day-data": "Energia dziś",
+                "full_backup_state": "Stycznik (wizualizacja)"
+              }
+            },
+            "texts": {
+              "name": "Teksty",
+              "data": {
+                "AC_SubBoard2_power_supply": "Rodzaj zasilania (tekst)",
+                "AC_SubBoard2_power_supply-grid": "GRID (tekst)",
+                "AC_SubBoard2_power_supply-backup": "Backup (tekst)"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
