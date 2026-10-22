@@ -4,7 +4,7 @@
   "version": "0.4.4",
   "documentation": "https://github.com/milooop2/energy-flow-dashboard",
   "requirements": [],
-  "codeowners": [],
+  "codeowners": ["@milooop2"],
   "config_flow": true,
   "integration_type": "service",
   "iot_class": "local_push",
