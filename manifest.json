@@ -2,7 +2,7 @@
   "domain": "energy_flow_dashboard",
   "name": "EnergyFlowDashboard",
   "version": "0.4.4",
-  "documentation": "https://github.com/milooop2/energy-flow-dashboard",
+  "documentation": "https://github.com/milooop2/energy_flow_dashboard",
   "requirements": [],
   "codeowners": ["@milooop2"],
   "config_flow": true,
